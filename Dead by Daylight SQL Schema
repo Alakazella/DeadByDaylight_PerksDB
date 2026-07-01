@@ -1,0 +1,37 @@
+-- Create the main Perks table
+CREATE TABLE Perks (
+    PerkID INT PRIMARY KEY AUTO_INCREMENT,
+    PerkName VARCHAR(255) NOT NULL,
+    Role VARCHAR(50) NOT NULL CHECK (Role IN ('Survivor', 'Killer')),
+    CharacterName VARCHAR(255) DEFAULT 'Universal',
+    Description TEXT NOT NULL,
+    ActivationCondition VARCHAR(255)
+);
+
+-- Create a table for Tags/Categories (Many-to-Many relationship)
+CREATE TABLE Tags (
+    TagID INT PRIMARY KEY AUTO_INCREMENT,
+    TagName VARCHAR(100) UNIQUE NOT NULL
+);
+
+-- Create a junction table to link Perks and Tags
+CREATE TABLE PerkTags (
+    PerkID INT,
+    TagID INT,
+    PRIMARY KEY (PerkID, TagID),
+    FOREIGN KEY (PerkID) REFERENCES Perks(PerkID) ON DELETE CASCADE,
+    FOREIGN KEY (TagID) REFERENCES Tags(TagID) ON DELETE CASCADE
+);
+
+-- Create a table for Perk Metrics (One-to-Many relationship)
+-- This handles values that change per tier (seconds, meters, percentages)
+CREATE TABLE PerkMetrics (
+    MetricID INT PRIMARY KEY AUTO_INCREMENT,
+    PerkID INT,
+    MetricContext VARCHAR(255) NOT NULL, -- e.g., 'Exhaustion Duration', 'Aura Reading Range'
+    MetricUnit VARCHAR(50) NOT NULL, -- e.g., 'Seconds', 'Meters', '%'
+    Tier1Value DECIMAL(10, 2), -- Using DECIMAL to allow for fractions if needed
+    Tier2Value DECIMAL(10, 2),
+    Tier3Value DECIMAL(10, 2),
+    FOREIGN KEY (PerkID) REFERENCES Perks(PerkID) ON DELETE CASCADE
+);
