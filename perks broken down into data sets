@@ -1,0 +1,2856 @@
+{
+  "perk": "Blood Warden",
+  "role": "Killer",
+  "character": "The Nightmare",
+  "real_name": "Freddy Krueger",
+  "trigger": "Hooking a Survivor",
+  "status_effects": [],
+  "effects": "When an Exit Gate is opened, once per trial, when you hook a Survivor, both Exits are blocked. You see the Auras of Survivors within Exit Thresholds.",
+  "scaling_metric": "seconds",
+  "values_by_tier": [40, 50, 60],
+  "lore": {
+    "quote": "This is my world. And you can't ever leave.",
+    "source": "Freddy Krueger"
+  }
+}
+[
+  {
+    "perk":"A Nurse's Calling\nKiller - The Nurse",
+    "role": "Killer",
+    "character":"- The Nurse",
+    "real_name": "Sally Smithson",
+    "trigger": "Hooking a Survivor",
+    "description":"Within 28\/30\/32m of injured Survivors who are healing or being healed, you see their Auras.\n\u201cStill attached to the fragments of her past life, she is drawn to those in need of help.\u201d",
+    "Unnamed: 4":"A Nurse's Calling",
+    "character killer":"The Nurse",
+    "character.1":null
+    "values_by_tier": [28m, 30m, 32m],
+
+  },
+  {
+    "description":"While carrying a Survivor:\nYou gain 6\/12\/18% Haste.\nYour Terror Radius is 12m larger.\n\n\"At some point, the excitement of hooking one of us becomes more important than the desire to kill us.\"",
+    "perk":"Agitation\nKiller - The Trapper",
+    "role":"Killer",
+    "character":"- The Trapper",
+    "Unnamed: 4":"Agitation",
+    "character killer":"The Trapper",
+    "character.1":null
+  },
+  {
+    "description":"Whenever you hook a Survivor, the farthest injured Survivor:\nGains Oblivious for 40\/50\/60s.\nYou see their Aura for 8s.\n\n\u201cYellow light's for my eyes only.\u201d \u2013Dallas",
+    "perk":"Alien Instinct\nKiller - The Xenomorph",
+    "role":"Killer",
+    "character":"The Xenomorph",
+    "Unnamed: 4":"Alien Instinct",
+    "character killer":"The Xenomorph",
+    "character.1":null
+  },
+  {
+    "description":"Whenever you fall from at least 1.25m, your lunge-attacks are 75% longer for 15\/20\/25s. Cooldown: 5s.\n\"Go on. Run. Tell your friends I'm coming for them.\" -Portia Maye",
+    "perk":"All-Shaking Thunder\nKiller - The Houndmaster",
+    "role":"Killer",
+    "character":"- Portia Maye",
+    "Unnamed: 4":"All-Shaking Thunder",
+    "character killer":"The Houndmaster",
+    "character.1":"Portia Maye"
+  },
+  {
+    "description":"While carrying a Survivor, within 16\/18\/20m of you, you see the Auras of other Survivors.",
+    "perk":"Awakened Awareness\nKiller - The Mastermind",
+    "role":"Killer",
+    "character":"- The Mastermind",
+    "Unnamed: 4":"Awakened Awareness",
+    "character killer":"The Mastermind",
+    "character.1":"The Mastermind"
+  },
+  {
+    "description":"Whenever you vault a Window, it is blocked for Survivors for 8\/12\/16s.\nYou basic-vault Windows 5\/10\/15% faster.\nOnly 1 Window can be blocked at a time.",
+    "perk":"Bamboozle\nKiller - The Clown",
+    "role":"Killer",
+    "character":"- Jeffrey \"The Clown\" Hawk",
+    "Unnamed: 4":"Bamboozle",
+    "character killer":"The Clown",
+    "character.1":"Jeffrey \"The Clown\" Hawk"
+  },
+  {
+    "description":"Whenever you hook a Survivor, for 5s, you see the Auras of all Survivors who are at least 60\/50\/40m away from the hooked Survivor.\n\"I just can't take no pleasure in killing. There's just some things you gotta do. Don't mean you have to like it.\" -Drayton Sawyer",
+    "perk":"Barbecue & Chili\nKiller - The Cannibal",
+    "role":"Killer",
+    "character":"- Leatherface",
+    "Unnamed: 4":"Barbecue & Chili",
+    "character killer":"The Cannibal",
+    "character.1":"Leatherface"
+  },
+  {
+    "description":"Within 16m of a completed Generator, you gain 5% Haste. When you leave the range, this ends after 1\/3\/5s.\n\u201cSurprise! Did you miss me, Andy?\u201d -Chucky",
+    "perk":"Batteries Included\nKiller - The Good Guy",
+    "role":"Killer",
+    "character":"- Chucky",
+    "Unnamed: 4":"Batteries Included",
+    "character killer":"The Good Guy",
+    "character.1":"Chucky"
+  },
+  {
+    "description":"Whenever you gain Bloodlust, gain Undetectable for 30\/35\/40s.\n\"Where did she go?\"",
+    "perk":"Beast of Prey\nKiller - The Huntress",
+    "role":"Killer",
+    "character":"- Anna",
+    "Unnamed: 4":"Beast of Prey",
+    "character killer":"The Huntress",
+    "character.1":"Anna"
+  },
+  {
+    "description":"Whenever a Generator is completed, you see the Auras of Survivors within 16m of it for 5s.\nWhen all Generators are completed, you see the Auras of all Survivors for 5\/7\/10s.",
+    "perk":"Bitter Murmur\nKiller",
+    "role":"Killer",
+    "character":null,
+    "Unnamed: 4":"Bitter Murmur",
+    "character killer":null,
+    "character.1":null
+  },
+  {
+    "description":"Whenever you hook a Survivor, for 20\/25\/30s, all injured Survivors:\nGain Exhausted.\nGain Hemorrhage.\n\n\u201cAttack an enemy with precision and their allies will feel it.\u201d -Renjiro's Doctrine 6:3",
+    "perk":"Blood Echo\nKiller - The Oni",
+    "role":"Killer",
+    "character":"- Kazan Yamaoka",
+    "Unnamed: 4":"Blood Echo",
+    "character killer":"The Oni",
+    "character.1":"Kazan Yamaoka"
+  },
+  {
+    "description":"When an Exit Gate is opened, once per trial, when you hook a Survivor, both Exits are blocked for 40\/50\/60s.\nYou see the Auras of Survivors within Exit Thresholds.\n\u201cThis is my world. And you can't ever leave.\u201d - Freddy Krueger",
+    "perk":"Blood Warden\nKiller - The Nightmare",
+    "role":"Killer",
+    "character":"- Freddy Krueger",
+    "Unnamed: 4":"Blood Warden",
+    "character killer":"The Nightmare",
+    "character.1":"Freddy Krueger"
+  },
+  {
+    "description":"Pools of Blood are brighter and last 2\/3\/4s longer.\n\"Pebbles shimmering in the moonlight; my life drips down in a trail so easy to follow.\"",
+    "perk":"Bloodhound\nKiller - The Wraith",
+    "role":"Killer",
+    "character":"- The Wraith",
+    "Unnamed: 4":"Bloodhound",
+    "character killer":"The Wraith",
+    "character.1":"The Wraith"
+  },
+  {
+    "description":"You basic-break Pallets and Breakable Walls, and damage Generators 10\/15\/20% faster.\n\"It's more than muscles. A dark power motivates the beast.\"",
+    "perk":"Brutal Strength\nKiller - The Trapper",
+    "role":"Killer",
+    "character":"- The Trapper",
+    "Unnamed: 4":"Brutal Strength",
+    "character killer":"The Trapper",
+    "character.1":"The Trapper"
+  },
+  {
+    "description":"Whenever you damage a Generator, it regresses 30\/40\/50% faster for 70s.\nFor that time, whenever a Survivor hits a good basic Skill Check while repairing that Generator, you are alerted.",
+    "perk":"Call of Brine\nKiller - The Onry\u014d",
+    "role":"Killer",
+    "character":"- Sadako Yamamura",
+    "Unnamed: 4":"Call of Brine",
+    "character killer":"The Onry\u014d",
+    "character.1":"Sadako Yamamura"
+  },
+  {
+    "description":"When the trial starts, the 3 farthest Generators from you are blocked for 80\/100\/120s, or until you down a Survivor.\n\u201cIt shall be known across the land that the Gods curse the unfaithful.\u201d (The Tablet of Adiris, 3.7.)",
+    "perk":"Corrupt Intervention\nKiller - The Plague",
+    "role":"Killer",
+    "character":"- Adiris",
+    "Unnamed: 4":"Corrupt Intervention",
+    "character killer":"The Plague",
+    "character.1":"Adiris"
+  },
+  {
+    "description":"Survivors within your Terror Radius:\nHeal 30\/40\/50% slower.\nWhile healing, basic Skill Checks spin 50% faster.",
+    "perk":"Coulrophobia\nKiller - The Clown",
+    "role":"Killer",
+    "character":"- Jeffrey \"The Clown\" Hawk",
+    "Unnamed: 4":"Coulrophobia",
+    "character killer":"The Clown",
+    "character.1":"Jeffrey \"The Clown\" Hawk"
+  },
+  {
+    "description":"Whenever a Generator is completed, you earn 2 Tokens, up to 5.\nWhenever you lunge-attack, spend 1 Token to make it 70\/75\/80% longer.",
+    "perk":"Coup de Gr\u00e2ce\nKiller - The Twins",
+    "role":"Killer",
+    "character":"- Charlotte & Victor Deshayes",
+    "Unnamed: 4":"Coup de Gr\u00e2ce",
+    "character killer":"The Twins",
+    "character.1":"Charlotte & Victor Deshayes"
+  },
+  {
+    "description":"Whenever a Generator is completed:\nYou see the Auras of all Windows for 20\/25\/30s.\nAll Windows are blocked for Survivors for 20\/25\/30s.\n\u201cThe specimen seems to be able to perform some kind of telekinesis that impacts the state of nearby objects, as if they existed in some other form within a dimension alternate to our own.\u201d -Hawkins National Laboratory",
+    "perk":"Cruel Limits\nKiller - The Demogorgon",
+    "role":"Killer",
+    "character":"- The Demogorgon",
+    "Unnamed: 4":"Cruel Limits",
+    "character killer":"The Demogorgon",
+    "character.1":"The Demogorgon"
+  },
+  {
+    "description":"You basic-vault Windows 15\/20\/25% faster.\nWhenever you are blinded or Pallet-stunned, the duration is 15% longer.\n\u201cRun all you want. I will not be denied.\u201d - Vecna",
+    "perk":"Dark Arrogance\nKiller - The Lich",
+    "role":"Killer",
+    "character":"- Vecna",
+    "Unnamed: 4":"Dark Arrogance",
+    "character killer":"The Lich",
+    "character.1":"Vecna"
+  },
+  {
+    "description":"Whenever the Obsession takes damage, for 35\/40\/45s:\nYour Terror Radius is set to 40m.\nThe Obsession has your Terror Radius.\nYou gain Undetectable.\n\n\u201cAnd terror shall take hold of a defiant non-believer, who shall falsely announce my arrival.\u201d (The Tablet of Adiris, 48.9)",
+    "perk":"Dark Devotion\nKiller - The Plague",
+    "role":"Killer",
+    "character":"- The Plague",
+    "Unnamed: 4":"Dark Devotion",
+    "character killer":"The Plague",
+    "character.1":"The Plague"
+  },
+  {
+    "description":"Whenever you search a Locker, you see the Auras of Survivors within 8m of Lockers for 6\/7\/8s. Cooldown: 30s.\n\"Stay in the light, my children. In darkness, your fear will expose you.\" \u2013Otto Stamper",
+    "perk":"Darkness Revealed\nKiller - The Dredge",
+    "role":"Killer",
+    "character":"Darkness Revealed\nThe Dredge",
+    "Unnamed: 4":"Darkness Revealed",
+    "character killer":"The Dredge",
+    "character.1":null
+  },
+  {
+    "description":"When you hook a Survivor, the first time a Survivor stops repairing a Generator, it is blocked for 25\/30\/35s. Cooldown: 25\/30\/35s.\n\"I've seen the look on a man's face when he realizes he's going to die.\" -Caleb Quinn",
+    "perk":"Dead Man\u2019s Switch\nKiller - The Deathslinger",
+    "role":"Killer",
+    "character":null,
+    "Unnamed: 4":"Dead Man\u2019s Switch",
+    "character killer":"The Deathslinger",
+    "character.1":null
+  },
+  {
+    "description":"Whenever a Generator is completed, the Generator with the most progress is blocked for 15\/20\/25s.\n\"Nobody escapes us.\" -Pinhead",
+    "perk":"Deadlock\nKiller - The Cenobite",
+    "role":"Killer",
+    "character":null,
+    "Unnamed: 4":"Deadlock",
+    "character killer":"The Cenobite",
+    "character.1":null
+  },
+  {
+    "description":"Whenever a Survivor finishes healing another, they scream. Then, until they take damage, while they are at least 12\/8\/4m away from that Survivor:\nThey gain Oblivious.\nThey see that Survivor's Aura.",
+    "perk":"Deathbound\nKiller - The Executioner",
+    "role":"Killer",
+    "character":null,
+    "Unnamed: 4":"Deathbound",
+    "character killer":"The Executioner",
+    "character.1":null
+  },
+  {
+    "description":"Whenever you damage a Generator, it becomes compromised.\nWhen that Generator is completed by Survivors:\nYou gain 8% Haste for 40\/50\/60s.\nYou gain Undetectable for 40\/50\/60s.\n\nOnly one Generator can be compromised at a time.\n\u201cYOU WILL HOLD NO DOMINION OVER ME.\u201d \u2013HUX-A7-13",
+    "perk":"Machine Learning",
+    "role":"Killer ",
+    "character":"The Singularity",
+    "Unnamed: 4":"Machine Learning",
+    "character killer":null,
+    "character.1":null
+  },
+  {
+    "description":"While carrying a Survivor:\nWhenever you miss a basic attack, your cooldown is 100% shorter.\nWhenever you damage a Survivor with a basic attack, the carried Survivor gains no wiggle progress for 2\/3\/4s.\n\n\u201cThere's no getting out of this now. We're too good at it.\u201d -The Legion",
+    "perk":"Mad Grit\n",
+    "role":"Killer ",
+    "character":"Killer - The Legion",
+    "Unnamed: 4":"Mad Grit",
+    "character killer":null,
+    "character.1":"The Legion"
+  },
+  {
+    "description":"While injured, whenever you finish healing another Survivor, you gain Endurance for 6\/8\/10s.\nWhile you have Deep Wound, you gain 3% Haste.\n\u201cI didn't come here to be robot food.\u201d \u2013Gabriel Soma",
+    "perk":"Made for This",
+    "role":"Killer ",
+    "character":"- Gabriel Soma",
+    "Unnamed: 4":"Made for This",
+    "character killer":null,
+    "character.1":"Gabriel Soma"
+  },
+  {
+    "description":"Whenever a Survivor unhooks another or themselves while you are at least 32m away:\nThey scream.\nThey gain Exposed for 40\/50\/60s.\n\nCooldown: 40\/50\/60s.\n\"You'd be surprised what tools can save a life.\" -Amanda Young",
+    "perk":"Make your Choice\nKiller - The Pig",
+    "role":"Killer ",
+    "character":null,
+    "Unnamed: 4":"Make your Choice",
+    "character killer":"The Pig",
+    "character.1":null
+  },
+  {
+    "description":"The first time each Generator has 90% progress: Survivors repairing it get special Skill Checks. If they miss one of these or stop repairing, that Generator is blocked for 16\/18\/20s.",
+    "perk":"Merciless Storm\nKiller - The Onry\u014d",
+    "role":"Killer ",
+    "character":null,
+    "Unnamed: 4":"Merciless Storm",
+    "character killer":"The Onry\u014d",
+    "character.1":null
+  },
+  {
+    "description":"While Survivors are repairing a Generator:\nThey gain Blindness.\nThey gain Exhausted.\n\nWhen they stop repairing a Generator, this ends after 3\/4\/5s.\n\"The specimen's apparent telepathic ability can evoke feelings of dread and fatigue in nearby individuals.\" -Hawkins National Laboratory",
+    "perk":"Mindbreaker\nKiller - The Demogorgon",
+    "role":"Killer ",
+    "character":null,
+    "Unnamed: 4":"Mindbreaker",
+    "character killer":"The Demogorgon",
+    "character.1":null
+  },
+  {
+    "description":"While self-healing, whenever a Survivor has 75% progress, they get special Skill Checks. If they miss one of these or stop healing, they gain Broken for 20\/25\/30s.\n\"Fire another broadside! Don't stop until the sea takes them!\" -Portia Maye",
+    "perk":"No Quarter\nKiller - The Houndmaster",
+    "role":"Killer ",
+    "character":null,
+    "Unnamed: 4":"No Quarter",
+    "character killer":"The Houndmaster",
+    "character.1":null
+  },
+  {
+    "description":"The first time you hook each Survivor, you earn 1 Token.\nWhen all Generators are completed, when a Survivor starts opening an Exit Gate:\nIt is blocked 12s, plus 6\/9\/12s for each Token.\nYou are alerted.\n\n\"That sound when you bleed...let me hear it again.\" -Hak Ji-woon",
+    "perk":"No Way Out\nKiller - The Trickster",
+    "role":"Killer ",
+    "character":null,
+    "Unnamed: 4":"No Way Out",
+    "character killer":"The Trickster",
+    "character.1":null
+  },
+  {
+    "description":"The first time you hook each Survivor, earn 1 Token.\nWhen all Generators are completed, for each Token:\nUpright Pallets are blocked for 12\/14\/16s.\nWindows are blocked for 12\/14\/16s.\n\n\"I'm not wrong. What's wrong is this messed-up world!\" -Ken Kaneki",
+    "perk":"None Are Free\nKiller - The Ghoul",
+    "role":"Killer ",
+    "character":null,
+    "Unnamed: 4":"None Are Free",
+    "character killer":"The Ghoul",
+    "character.1":null
+  },
+  {
+    "description":"Whenever you damage a Generator, for 3\/4\/5s, you see the Auras of Survivors within 24m of you.\n\"Out with you, cowards! Show yourselves!\" - Tarhos Kov\u00e1cs",
+    "perk":"Nowhere to Hide\nKiller - The Knight",
+    "role":"Killer ",
+    "character":null,
+    "Unnamed: 4":"Nowhere to Hide",
+    "character killer":"The Knight",
+    "character.1":null
+  },
+  {
+    "description":"Whenever you damage a Generator, up to 4 other Generators start regressing. Survivors repairing them get a special Skill Check. Cooldown: 45\/40\/35s.\n\"Damn them as they would damn us.\" -Charlotte Deshayes",
+    "perk":"Oppression\nKiller - The Twins",
+    "role":"Killer ",
+    "character":null,
+    "Unnamed: 4":"Oppression",
+    "character killer":"The Twins",
+    "character.1":null
+  },
+  {
+    "description":"Whenever you damage a Generator:\nIts regression speed will go from 85% to 130% over the next 30s.\nThe next Survivor who starts repairing it gets a special Skill Check. If they miss it, they lose 2\/3\/4% more progress.\n\n\"It is a trap. But a trap one must step in\u2026\" -The Doctor",
+    "perk":"Overcharge\nKiller - The Doctor",
+    "role":"Killer ",
+    "character":null,
+    "Unnamed: 4":"Overcharge",
+    "character killer":"The Doctor",
+    "character.1":null
+  },
+  {
+    "description":"While healing another Survivor, you both gain Elusive.\nWhenever you finish healing the Obsession, you both gain Elusive for 20\/25\/30s.\nWhen the trial starts, you are less likely to be the Obsession.\n\u201cI understand computers\u2026 systems. Problems. But this\u2026 I wonder if I'll ever understand.\u201d \u2013 Kwon Tae-young",
+    "perk":"A Place For Us",
+    "role":"Survivor",
+    "character":"- Kwon Tae-young",
+    "Unnamed: 4":"A Place For Us",
+    "character killer":null,
+    "character.1":"Kwon Tae-young"
+  },
+  {
+    "description":"Whenever you loot an item from a Chest, it will have:\nA Visceral or lower rarity add-on.\n50\/75\/100% chance for an Uncommon or lower rarity add-on.\n\nWhen you escape, you keep your add-ons.\n\u201cEverything that glitters isn't gold. But gold isn't worth a damn in this place, so this should come in handy.\u201d -Ace",
+    "perk":"Ace in the Hole",
+    "role":"Survivor",
+    "character":"- Ace Visconti",
+    "Unnamed: 4":"Ace in the Hole",
+    "character killer":null,
+    "character.1":"Ace Visconti"
+  },
+  {
+    "description":"When all Generators are completed, if you are downed or injured, heal instantly. Then, ignoring Exhausted:\nYou gain 50% Haste for 3s.\nYou gain Exhausted for 60\/50\/40s.",
+    "perk":"Adrenaline",
+    "role":"Survivor",
+    "character":"- Meg Thomas",
+    "Unnamed: 4":"Adrenaline",
+    "character killer":null,
+    "character.1":"Meg Thomas"
+  },
+  {
+    "description":"You and up to 1\/2\/3 Survivors see each other's Auras whenever:\nYou unhook them, or they unhook you.\nYou finish healing them, or they finish healing you.\n\nThis effect lasts until you are hooked.\n\u201cOil work to honor my best buddies, the best musicians I know. Their album got me through dark times.\u201d \u2013Jeff, oil on canvas, 16x16",
+    "perk":"Aftercare",
+    "role":"Survivor",
+    "character":"- Jeff Johansen",
+    "Unnamed: 4":"Aftercare",
+    "character killer":null,
+    "character.1":"Jeff Johansen"
+  },
+  {
+    "description":"Whenever the Killer breaks a Pallet or Breakable Wall, or damages a Generator:\nYou hear a sound cue.\nYou see their Aura for 3\/4\/5s.\n\u201cI have true sight.\u201d -Feng Min",
+    "perk":"Alert",
+    "role":"Survivor",
+    "character":"- Feng Min",
+    "Unnamed: 4":"Alert",
+    "character killer":null,
+    "character.1":"Feng Min"
+  },
+  {
+    "description":"While next to a Dropped Pallet, use Active Ability Button 1 for 5\/4\/3s to reset it.\nYou see the Auras of Dropped Pallets.\n\u201cI'll hit you with everything I've got. Then I'll do it again.\u201d -Yui Kimura",
+    "perk":"Any Means Necessary",
+    "role":"Survivor",
+    "character":"- Yui Kimura",
+    "Unnamed: 4":"Any Means Necessary",
+    "character killer":null,
+    "character.1":"Yui Kimura"
+  },
+  {
+    "description":"After you rummage or unlock 2 Chests, while next to a Broken Pallet, use Active Ability Button 1 for 4s to create a Fragile Pallet.\nWithin 24\/28\/32m, you see the Auras of Broken Pallets.\n\u201cWithout the fences, this place is worthless.\u201d -Rick Grimes",
+    "perk":"Apocalyptic Ingenuity",
+    "role":"Survivor",
+    "character":"- Rick Grimes",
+    "Unnamed: 4":"Apocalyptic Ingenuity",
+    "character killer":null,
+    "character.1":"Rick Grimes"
+  },
+  {
+    "description":"When the trial starts, you earn 4 Tokens.\nSpend 1 Token to rummage an empty Chest, up to 2 times per Chest.\nYou rummage Chests 40\/60\/80% faster.",
+    "perk":"Appraisal",
+    "role":"Survivor",
+    "character":"- Elodie Rakoto",
+    "Unnamed: 4":"Appraisal",
+    "character killer":null,
+    "character.1":"Elodie Rakoto"
+  },
+  {
+    "description":"You start the trial with 0 Tokens, up to 3\/4\/5, and your good basic healing Skill Checks give 15% less progress.\nWhile healing another Survivor without a Med-Kit:\nWhenever you hit a basic Skill Check, you earn 1 token.\nWhenever you hit a basic Skill Check, for each Token, you gain 15% more progress.\nYou cannot get great basic Skill Checks.\n\n\u201cThere's no limit to what you can achieve, as long as you back it up with hard work.\u201d -Adam Francis",
+    "perk":"Autodidact",
+    "role":"Survivor",
+    "character":"- Adam Francis",
+    "Unnamed: 4":"Autodidact",
+    "character killer":null,
+    "character.1":"Adam Francis"
+  },
+  {
+    "description":"Whenever you unhook a Survivor:\nThey gain 10% Haste for 20\/25\/30s.\nThey leave no Pools of Blood for 20\/25\/30s.\nThey leave no Scratch Marks for 20\/25\/30s.\nYou see the Killer's Aura for 8s.\n\u201cI promised to keep you shitheads safe, and that's exactly what I plan on doing.\u201d -Steve Harrington",
+    "perk":"Babysitter",
+    "role":"Survivor",
+    "character":"- Steve Harrington",
+    "Unnamed: 4":"Babysitter",
+    "character killer":null,
+    "character.1":"Steve Harrington"
+  },
+  {
+    "description":"Whenever the Killer picks-up another Survivor, for the next 10s, when you start running:\nGain 50% Haste for 5s.\nGain Exhausted for 30\/25\/20s.\n\n\u201cYou forget about me?\u201d \u2013Renato Lyra",
+    "perk":"Background Player",
+    "role":"Survivor",
+    "character":"- Renato Lyra",
+    "Unnamed: 4":"Background Player",
+    "character killer":null,
+    "character.1":"Renato Lyra"
+  },
+  {
+    "description":"After repairing 20% of Generators, while next to a Window, use Active Ability Button 2 to trap it for 40\/50\/60s. All Survivors see that Window's Aura for that time.\nWhen the Killer vaults that Window, the trap explodes and they gain 50% Hindered for 4s.\n\"Never tell me the odds.\" -Dustin Henderson",
+    "perk":"Bada Bada Boom",
+    "role":"Survivor",
+    "character":"- Dustin Henderson",
+    "Unnamed: 4":"Bada Bada Boom",
+    "character killer":null,
+    "character.1":"Dustin Henderson"
+  },
+  {
+    "description":"Whenener you fall from at least 1.25m:\nYou gain 50% Haste for 3s.\nYou gain Exhausted for 60\/50\/40s.\nYour stagger is 75% shorter.\nYour Grunts from falling are 100% quieter.\n\n\"I've jumped from higher places.\" -Nea",
+    "perk":"Balanced Landing",
+    "role":"Survivor",
+    "character":"- Nea Karlsson",
+    "Unnamed: 4":"Balanced Landing",
+    "character killer":null,
+    "character.1":"Nea Karlsson"
+  },
+  {
+    "description":"While idle, use Active Ability Button 1 to perform, empowering all Survivors within 16m for up to 15s. While you are performing, other Survivors will see your Aura. Roll a d20:\n1 | You scream, but nothing happens.\n2-10 | Basic Skill Checks give +1% progress.\n11-19 | Basic Skill Checks give +2% progress.\n20 | Basic Skill Checks give +3% progress.\n\nIf you complete the performance, this effect ends after 90s. Cooldown: 110\/100\/90s.\n\"Listen closely! I'm about to save your life!\" -Aestri",
+    "perk":"Bardic Inspiration",
+    "role":"Survivor",
+    "character":"- Aestri Yazar",
+    "Unnamed: 4":"Bardic Inspiration",
+    "character killer":null,
+    "character.1":"Aestri Yazar"
+  },
+  {
+    "description":"Whenever you finish healing another Survivor, until they take damage:\nThey bless and cleanse 12\/14\/16% faster.\nThey heal 12\/14\/16% faster.\nThey unlock Chests 12\/14\/16% faster.",
+    "perk":"Better Than New",
+    "role":"Survivor",
+    "character":"- Rebecca Chambers",
+    "Unnamed: 4":"Better Than New",
+    "character killer":null,
+    "character.1":"Rebecca Chambers"
+  },
+  {
+    "description":"While you are repairing a Generator:\nOther Survivors see that Generator's Aura.\nWhenever the Killer downs a Survivor, you see the Auras of all Survivors for 20\/25\/30s.\n\n\n\u201cLet's burn that lab to the ground.\u201d -Nancy Wheeler",
+    "perk":"Better Together",
+    "role":"Survivor",
+    "character":"- Nancy Wheeler",
+    "Unnamed: 4":"Better Together",
+    "character killer":null,
+    "character.1":"Nancy Wheeler"
+  },
+  {
+    "description":"While healing, you and the healed Survivor make no noises or Grunts of Pain. Whenever you miss a basic Skill Check:\nYou lose only 3\/2\/1% progress.\nThe Killer is not alerted.\n\n\"I can do this.\" -Leon S. Kennedy",
+    "perk":"Bite the Bullet",
+    "role":"Survivor",
+    "character":"- Leon S. Kennedy",
+    "Unnamed: 4":"Bite the Bullet",
+    "character killer":null,
+    "character.1":"Leon S. Kennedy"
+  },
+  {
+    "description":"After repairing 40% of Generators, while next to a Generator, use Active Ability Button 2 to trap it for 100\/110\/120s. All Survivors see that Generator's Aura for that time.\nWhen the Killer damages that Generator, the trap explodes, then:\nThey are stunned for 4s.\nEveryone nearby looking at the detonation is blinded.\n\n\"You want S.T.A.R.S.? I'll give you S.T.A.R.S.! \" -Jill Valentine",
+    "perk":"Blast Mine",
+    "role":"Survivor",
+    "character":"- Jill Valentine",
+    "Unnamed: 4":"Blast Mine",
+    "character killer":null,
+    "character.1":"Jill Valentine"
+  },
+  {
+    "description":"While you are not the Obsession:\nWhile you or the Obsession are injured, you see each other's Auras.\nWhenever you finish healing the Obsession, or they finish healing you, while within 16m of each other, you both gain 5\/6\/7% Haste.\n\nWhen the trial starts, you are less likely to be the Obsession.",
+    "perk":"Blood Pact",
+    "role":"Survivor",
+    "character":"- Cheryl Mason",
+    "Unnamed: 4":"Blood Pact",
+    "character killer":null,
+    "character.1":"Cheryl Mason"
+  },
+  {
+    "description":"Until all Generators are completed, whenever you are unhooked, for the next 40\/50\/60s, while Exhausted, use Active Ability Button 1 to lose Exhausted instantly.\nThis is disabled by conspicuous actions.\n\u201cJust gotta\u2026 push through.\u201d \u2013Renato Lyra",
+    "perk":"Blood Rush",
+    "role":"Survivor",
+    "character":"- Renato Lyra",
+    "Unnamed: 4":"Blood Rush",
+    "character killer":null,
+    "character.1":"Renato Lyra"
+  },
+  {
+    "description":"While carried by the Killer:\nWhenever the Killer falls from at least 1.25m, you gain 33% of your current wiggle progress.\nYour wiggle is 60\/70\/80% stronger.\nWithin 16m, the Killer cannot see Hook Auras.\n\n\u201cBuck and Wild\/ Swing to be free\/Your hands just can't keep ahold of me.\u201d -Kate Denson's Boil Over",
+    "perk":"Boil Over",
+    "role":"Survivor",
+    "character":"- Kate Denson",
+    "Unnamed: 4":"Boil Over",
+    "character killer":null,
+    "character.1":"Kate Denson"
+  },
+  {
+    "description":"Within 20\/28\/36m, you see other Survivors' Auras.\n\"We have to work as a team, I need you to survive so that I can survive!\" -Dwight",
+    "perk":"Bond",
+    "role":"Survivor",
+    "character":"- Dwight Fairfield",
+    "Unnamed: 4":"Bond",
+    "character killer":null,
+    "character.1":"Dwight Fairfield"
+  },
+  {
+    "description":"While next to a totem, use Active Ability Button 1 to bless it, creating a unique Boon Totem that combines all your Boons.\nSurvivors within the Boon's range:\nWhile healing without a Med-Kit, they heal others 50\/75\/100% faster.\nWhile injured, other Survivors see their Aura.\n\n\"Try this, it's better than anything you'll find in a pharmacy.\" -Mikaela Reid",
+    "perk":"Boon: Circle of Healing",
+    "role":"Survivor",
+    "character":"- Mikaela Reid",
+    "Unnamed: 4":"Boon: Circle of Healing",
+    "character killer":null,
+    "character.1":"Mikaela Reid"
+  },
+  {
+    "description":"While next to a totem, use Active Ability Button 1 to bless it, creating a unique Boon Totem that combines all your Boons.\nSurvivors within the Boon's range gain 3% Haste. When leaving the range, this ends after 2\/3\/4s.",
+    "perk":"Boon: Dark Theory",
+    "role":"Survivor",
+    "character":"- Yoichi Asakawa",
+    "Unnamed: 4":"Boon: Dark Theory",
+    "character killer":null,
+    "character.1":"Yoichi Asakawa"
+  },
+  {
+    "description":"While next to a totem, use Active Ability Button 1 to bless it, creating a unique Boon totem that combines all your Boons.\nDowned Survivors within the Boon's range:\nRecover 90\/95\/100% faster.\nCan fully recover.\n\n\"It's not our time to die... probably.\" -Jonah Vasquez",
+    "perk":"Boon: Exponential",
+    "role":"Survivor",
+    "character":"- Jonah Vasquez",
+    "Unnamed: 4":"Boon: Exponential",
+    "character killer":null,
+    "character.1":"Jonah Vasquez"
+  },
+  {
+    "description":"While next to a totem, use Active Ability Button 1 to bless it, creating a unique Boon totem that combines all your Boons.\nSurvivors within the Boon's range:\nSee the Auras of Chests.\nSee the Auras of Generators.\n\nWhile you have a Boon Totem, you bless and cleanse 6\/8\/10% faster.\n\"A shift in reality. Heavy with hidden meanings.\" \u2013 Return",
+    "perk":"Boon: Illumination",
+    "role":"Survivor",
+    "character":"- Alan Wake",
+    "Unnamed: 4":"Boon: Illumination",
+    "character killer":null,
+    "character.1":"Alan Wake"
+  },
+  {
+    "description":"While next to a Totem, use Active Ability Button 1 to bless it, creating a unique Boon Totem that combines all your Boons. Survivors within the Boon's range:\nLeave no Scratch Marks.\nTheir Auras cannot be seen by the Killer.\n\nWhen leaving the range, this ends after 2\/3\/4s.\n\"Stick to the shadows and cover your tracks.\" -Mikaela Reid",
+    "perk":"Boon: Shadow Step",
+    "role":"Survivor",
+    "character":"- Mikaela Reid",
+    "Unnamed: 4":"Boon: Shadow Step",
+    "character killer":null,
+    "character.1":"Mikaela Reid"
+  },
+  {
+    "description":"Whenever you unhook a Survivor:\nThey retain their unhook Endurance for 6\/8\/10s longer.\nThey retain their unhook Haste for 10s longer.\n\n\"Probably stings like hell, but it ain't gonna kill ya. Up and at 'em soldier. Time to move!\" -Bill Overbeck",
+    "perk":"Borrowed Time",
+    "role":"Survivor",
+    "character":"- William \"Bill\" Overbeck",
+    "Unnamed: 4":"Borrowed Time",
+    "character killer":null,
+    "character.1":"William \"Bill\" Overbeck"
+  },
+  {
+    "description":"You heal 30\/40\/50% faster.\n\"Basic botany knowledge could save your life someday.\" -Claudette Morel",
+    "perk":"Botany Knowledge",
+    "role":"Survivor",
+    "character":"- Claudette Morel",
+    "Unnamed: 4":"Botany Knowledge",
+    "character killer":null,
+    "character.1":"Claudette Morel"
+  },
+  {
+    "description":"Whenever you are unhooked:\nThe Hook breaks, then is repaired after 180s.\nYou see the Killer's Aura for 4\/5\/6s.\n\u201cNamed Belly of the Beast, this wood piece had a story to tell; it didn't waste its second chance.\u201d \u2013Jeff (ink & oil wash on wood)",
+    "perk":"Breakdown",
+    "role":"Survivor",
+    "character":"- Jeff Johansen",
+    "Unnamed: 4":"Breakdown",
+    "character killer":null,
+    "character.1":"Jeff Johansen"
+  },
+  {
+    "description":"Within 5m of a carried Survivor:\nYou gain 6\/8\/10% Haste.\nThe carried Survivor wiggles 25% faster.\n\n\u201cCome, we're going to rip our way out of this.\u201d -Yui Kimura",
+    "perk":"Breakout",
+    "role":"Survivor",
+    "character":"- Yui Kimura",
+    "Unnamed: 4":"Breakout",
+    "character killer":null,
+    "character.1":"Yui Kimura"
+  },
+  {
+    "description":"While healing a downed Survivor, you both see the Killer's Aura.\nWhenever you finish healing a downed Survivor or fully recover:\nThe Survivor gains 50% Haste for 3\/4\/5s.\nThe Survivor leaves no Scratch Marks for 3\/4\/5s.\n\n\u201cGhost beaters never leave a man behind.\" -Ash Williams",
+    "perk":"Buckle Up",
+    "role":"Survivor",
+    "character":"- Ashley J. Williams",
+    "Unnamed: 4":"Buckle Up",
+    "character killer":null,
+    "character.1":"Ashley J. Williams"
+  },
+  {
+    "description":"While holding a depleted item, after hiding in a Locker for 14\/12\/10s, it is recharged to 99%.\nEach time you recharge an item this way, it recharges 33% fewer Charges.\n\"Architecture is the soul of civilization.\u201d -Felix Richter",
+    "perk":"Built to Last",
+    "role":"Survivor",
+    "character":"- Felix Richter",
+    "Unnamed: 4":"Built to Last",
+    "character killer":null,
+    "character.1":"Felix Richter"
+  },
+  {
+    "description":"You do not scare Crows or scream.\nYou bless and cleanse Totems, and unlock Chests silently, but 40\/35\/30% slower.",
+    "perk":"Calm Spirit",
+    "role":"Survivor",
+    "character":"- Jake Park",
+    "Unnamed: 4":"Calm Spirit",
+    "character killer":null,
+    "character.1":"Jake Park"
+  },
+  {
+    "description":"While you are struggling on Hook, when another Survivor gets within 16m, the timer is paused for 26\/30\/34s.\n\"So, remember once you get in there\u2026 pretend like you don't care. There you go, you're learning my friend. You're learning.\u201d -Steve Harrington",
+    "perk":"Camaraderie",
+    "role":"Survivor",
+    "character":"- Steve Harrington",
+    "Unnamed: 4":"Camaraderie",
+    "character killer":null,
+    "character.1":"Steve Harrington"
+  },
+  {
+    "description":"While you are using a Flashlight, you gain 50% Haste.\nWhenever you blind the Killer, they gain 20% Hindered for 6s. Cooldown: 60\/50\/40s.\n\u201cI squeezed the flashlight like my life depended on it, willing it to stop coming any closer.\u201d \u2013 Departure",
+    "perk":"Champion of Light",
+    "role":"Survivor",
+    "character":"- Alan Wake",
+    "Unnamed: 4":"Champion of Light",
+    "character killer":null,
+    "character.1":"Alan Wake"
+  },
+  {
+    "description":"When the trial starts, you earn 2 Tokens.\nWhile hiding in a Locker and holding a non-event Toolbox, use Active Ability Button 2 and spend 1 Token to transform your Toolbox and add-ons into a Med-Kit of the same rarity with 80\/90\/100% Charges and random add-ons of the same rarity.\n\u201cOh my god, oh my god, oh my god, oh my god.\u201d \u2014Dustin Henderson",
+    "perk":"Change of Plan",
+    "role":"Survivor",
+    "character":"- Dustin Henderson",
+    "Unnamed: 4":"Change of Plan",
+    "character killer":null,
+    "character.1":"Dustin Henderson"
+  },
+  {
+    "description":"After repairing 20% of Generators, while next to a Dropped Pallet, use Active Ability Button 2 to trap it for 40\/50\/60s. All Survivors see that Pallet's Aura for that time.\nWhen the Killer breaks that Pallet, the trap explodes and they gain 50% Hindered for 4s.\n\u201cHow do we kill it, Ash?\u201d \u2013Ellen Ripley",
+    "perk":"Chemical Trap",
+    "role":"Survivor",
+    "character":"- Ellen Ripley",
+    "Unnamed: 4":"Chemical Trap",
+    "character killer":null,
+    "character.1":"Ellen Ripley"
+  },
+  {
+    "description":"Whenever you bless or cleanse a Totem, while not holding an item, use {Input.UseItem} to, for up to 10\/11\/12s and within 64m:\nSee the Auras of Chests.\nSee the Auras of Exit Gate Switches.\nSee the Auras of Generators.\nSee the Aura of the Hatch.\nSee the Auras of Hooks.\n\n\"Does anyone else see that? Just me?\" -Mikaela Reid",
+    "perk":"Clairvoyance",
+    "role":"Survivor",
+    "character":"- Mikaela Reid",
+    "Unnamed: 4":"Clairvoyance",
+    "character killer":null,
+    "character.1":"Mikaela Reid"
+  },
+  {
+    "description":"Whenever you finish healing another Survivor, while being healed by another Survivor, use Active Ability Button 1 to gain Broken.\nAfter 80\/70\/60s, if you are not downed, you are instantly healed.\n\"I'll be fine! Don't stick your neck out for me.\" -Taurie Cain",
+    "perk":"Clean Break",
+    "role":"Survivor",
+    "character":"- Taurie Cain",
+    "Unnamed: 4":"Clean Break",
+    "character killer":null,
+    "character.1":"Taurie Cain"
+  },
+  {
+    "description":"Whenever you unhook a Survivor, while crouched and idle, use Active Ability Button 1 to have injured and downed Survivors within 24m:\nMake no Grunts of Pain for 10\/12.5\/15s.\nLeave no Pools of Blood for 10\/12.5\/15s.\nLeave no Scratch Marks for 10\/12.5\/15s.\n\nYou scream, then the Killer sees your Aura for 5s.\n\u201cWe're the ones who live.\u201d -Rick Grimes",
+    "perk":"Come and Get Me!",
+    "role":"Survivor",
+    "character":"- Rick Grimes",
+    "Unnamed: 4":"Come and Get Me!",
+    "character killer":null,
+    "character.1":"Rick Grimes"
+  },
+  {
+    "description":"After you finish healing 1 other Survivor, while downed with at least 25% recovery, use Active Ability Button 1 to recover instantly.\nYou gain Broken, then, after 20\/25\/30s, you are downed instantly.\n\"It's enough to keep going. Keep trying. Keep fighting. Keep dreaming.\" -Michonne Grimes",
+    "perk":"Conviction",
+    "role":"Survivor",
+    "character":"- Michonne Grimes",
+    "Unnamed: 4":"Conviction",
+    "character killer":null,
+    "character.1":"Michonne Grimes"
+  },
+  {
+    "description":"When the trial starts, you earn 1\/2\/3 Tokens, up to 5.\nWhenever you hit a great basic Skill Check, earn 1 Token.\nWhenever another Survivor misses a basic Skill Check, spend 1 Token:\nThe missed Skill Check becomes a good Skill Check.\nYou see that Survivor's Aura for 6s.\n\n\"Can't hurt to have another set of eyes on the problem.\" -Jonah Vasquez",
+    "perk":"Corrective Action",
+    "role":"Survivor",
+    "character":"- Jonah Vasquez",
+    "Unnamed: 4":"Corrective Action",
+    "character killer":null,
+    "character.1":"Jonah Vasquez"
+  },
+  {
+    "description":"When the trial starts, you earn 1 Token.\nWhenever you cleanse a Totem, earn 1 Token, then, you see the Aura of the farthest Totem for 10\/12\/14s.\nFor each Token, you cleanse Totems 25% faster.\n\"I don't mind a little detective work.\" -Jill Valentine",
+    "perk":"Counterforce",
+    "role":"Survivor",
+    "character":"- Jill Valentine",
+    "Unnamed: 4":"Counterforce",
+    "character killer":null,
+    "character.1":"Jill Valentine"
+  },
+  {
+    "description":"While in the Killer's Terror Radius, they leave Light Marks that last for 10s that you can see. While on the Killer's Light Marks, you gain Elusive. This ends after 3\/4\/5s.\n\"The witness has said enough, Your Honor. No further questions.\" -Shane Wiigwaas",
+    "perk":"Cross-Examination",
+    "role":"Survivor",
+    "character":"- Shane Wiigwaas",
+    "Unnamed: 4":"Cross-Examination",
+    "character killer":"Examination",
+    "character.1":"Shane Wiigwaas"
+  },
+  {
+    "description":"While chased by the Killer, whenever you medium or fast-vault:\nFor up to 4\/5\/6s, your medium and fast vaults are silent.\nDuring that time, whenever you medium or fast-vault, the timer is reset.\n\nCooldown: 45s.\n\u201cI know how we can get out of here. Quick, this way.\u201d \u2013Thalita Lyra",
+    "perk":"Cut Loose",
+    "role":"Survivor",
+    "character":"- Thalita Lyra",
+    "Unnamed: 4":"Cut Loose",
+    "character killer":null,
+    "character.1":"Thalita Lyra"
+  },
+  {
+    "description":"Whenever you fast-exit a Locker, medium-vault, or fast-vault, you leave no Scratch Marks for 5s. Cooldown: 25\/20\/15s.\n\u201cDance with me, there's a storm comin'\/Follow my boots, try to keep up\/Dance with me, until sun up.\u201d -Kate Denson's Dance With Me",
+    "perk":"Dance With Me",
+    "role":"Survivor",
+    "character":"- Kate Denson",
+    "Unnamed: 4":"Dance With Me",
+    "character killer":null,
+    "character.1":"Kate Denson"
+  },
+  {
+    "description":"Whenever you are unhooked, while injured and running, use Active Ability Button 1:\nYou gain Endurance for 0.5s.\nYou gain Exhausted for 60\/50\/40s.\n\n\u201cI thought to myself, \u2018Gonna 'ave some fun \u2018ere lads, let's get stuck in!' It were a right dust up, I swear down!\u201d -David King",
+    "perk":"Dead Hard",
+    "role":"Survivor",
+    "character":"- David King",
+    "Unnamed: 4":"Dead Hard",
+    "character killer":null,
+    "character.1":"David King"
+  },
+  {
+    "description":"While injured, basic Skill Checks:\nAre 6\/8\/10% more likely to appear.\nAppear in random places.\n\nWhenever you miss a basic Skill Check, you lose 50% less progress.\n\u201cThe night had been one desperate situation after another.\u201d \u2013 Departure",
+    "perk":"Deadline",
+    "role":"Survivor",
+    "character":"- Alan Wake",
+    "Unnamed: 4":"Deadline",
+    "character killer":null,
+    "character.1":"Alan Wake"
+  },
+  {
+    "description":"Whenever you attempt to fast-enter a Locker:\nYou do not enter the Locker.\nThe Killer is alerted.\nYou leave no Pools of Blood for 5s.\nYou leave no Scratch Marks for 5s.\n\nCooldown: 25\/20\/15s.",
+    "perk":"Deception",
+    "role":"Survivor",
+    "character":"- Elodie Rakoto",
+    "Unnamed: 4":"Deception",
+    "character killer":null,
+    "character.1":"Elodie Rakoto"
+  },
+  {
+    "description":"Until all Generators are completed, whenever you are unhooked, for the next 40\/50\/60s: when the Killer picks you up, once per trial, hit a Special Skill check:\nStun the Killer for 4s.\nBecome the Obsession.\n\nThis is disabled by conspicuous actions. At the start of the trial, you are more likely to be the Obsession.\n\"There is nothing to be scared of.\" -Laurie Strode",
+    "perk":"Decisive Strike",
+    "role":"Survivor",
+    "character":"- Laurie Strode",
+    "Unnamed: 4":"Decisive Strike",
+    "character killer":null,
+    "character.1":"Laurie Strode"
+  },
+  {
+    "description":"Once per trial, when you safely unhook another Survivor, you can unhook yourself. When you unhook yourself this way, you gain Broken for 100\/80\/60s.\n\u201cI was raised by a strict man who taught me how to make the best of a bad situation.\u201d -Adam Francis",
+    "perk":"Deliverance",
+    "role":"Survivor",
+    "character":"- Adam Francis",
+    "Unnamed: 4":"Deliverance",
+    "character killer":null,
+    "character.1":"Adam Francis"
+  },
+  {
+    "description":"For each injured, downed, or hooked Survivor:\nYou heal 16\/18\/20% faster.\nYou unhook 16\/18\/20% faster.\n\n\"When they come with a wrecking ball, build stronger walls.\u201d -Felix Richter",
+    "perk":"Desperate Measures",
+    "role":"Survivor",
+    "character":"- Felix Richter",
+    "Unnamed: 4":"Desperate Measures",
+    "character killer":null,
+    "character.1":"Felix Richter"
+  },
+  {
+    "description":"Whenever a Generator is completed, for 20s, within 32\/48\/64m of you:\nYou see the Auras of Chests.\nYou see the Auras of Generators.\nYou see the Auras of Totems.\n\n\"Are you able to tell us where you were last night?\" -Detective David Tapp",
+    "perk":"Detective's Hunch",
+    "role":"Survivor",
+    "character":"- Detective Tapp",
+    "Unnamed: 4":"Detective's Hunch",
+    "character killer":null,
+    "character.1":"Detective Tapp"
+  },
+  {
+    "description":"When the trial starts, and after being chased for 15s, you earn 1 Token, up to 2.\nWhile not downed, whenever the Killer attempts to see your Aura, spend 1 Token. Then, for the next 8\/10\/12s:\nThe Killer cannot see your Aura.\nYou leave no Scratch Marks.\n\n\u201cExploration of Norse mythology: bravery can conceal your flaws, even at your most vulnerable.\u201d \u2013Jeff, pencil on toned paper",
+    "perk":"Distortion",
+    "role":"Survivor",
+    "character":"- Jeff Johansen",
+    "Unnamed: 4":"Distortion",
+    "character killer":null,
+    "character.1":"Jeff Johansen"
+  },
+  {
+    "description":"After hiding for 30\/25\/20s within the Killer's Terror Radius, while crouched and idle, use Active Ability Button 1 to throw a pebble 20m away:\nThe Killer is alerted.\nThe pebble leaves Scratch Marks.\n\n\u201cThere's what is easy and then there's what is right. If you confuse the two, there's no telling what you become.\u201d -Adam Francis",
+    "perk":"Diversion",
+    "role":"Survivor",
+    "character":"- Adam Francis",
+    "Unnamed: 4":"Diversion",
+    "character killer":null,
+    "character.1":"Adam Francis"
+  },
+  {
+    "description":"While healing another Survivor:\nFor each Hook State they have, you heal 30\/40\/50% faster.\nWhenever you hit a great basic Skill Check, you gain 3% more progress.\n\n\"Look at me. My name's Orela, and I'm gonna make sure you're all right.\" -Orela Rose",
+    "perk":"Do No Harm",
+    "role":"Survivor",
+    "character":"- Orela Rose",
+    "Unnamed: 4":"Do No Harm",
+    "character killer":null,
+    "character.1":"Orela Rose"
+  },
+  {
+    "description":"While healthy and running, use Active Ability Button 1:\nYou gain 25% Haste for 2s.\nYou gain Exhausted for 60\/50\/40s.\n\nThen, one happens at random:\nYou gain 25% Haste for 2s.\nYou gain Exposed for 12s.\nYou gain a random rare item with random add-ons.\nYou scream, but nothing happens.\n\nThe same effect cannot happen twice in a row.\n\u201cTake the part. It's a good movie, he says. What's the worst that can happen?\u201d \u2013Nicolas Cage",
+    "perk":"Dramaturgy",
+    "role":"Survivor",
+    "character":"- Nicolas Cage",
+    "Unnamed: 4":"Dramaturgy",
+    "character killer":null,
+    "character.1":"Nicolas Cage"
+  },
+  {
+    "description":"While healthy, whenever you take a protection hit, other Survivors within 12m gain 25% Haste for 4\/5\/6s.\n\"Don't worry about me. I've got a knack for bouncing back.\" -Orela Rose",
+    "perk":"Duty of Care",
+    "role":"Survivor",
+    "character":"- Orela Rose",
+    "Unnamed: 4":"Duty of Care",
+    "character killer":null,
+    "character.1":"Orela Rose"
+  },
+  {
+    "description":"You heal other Survivors 25\/30\/35% faster.\nInjured Survivors see your Aura.",
+    "perk":"Empathic Connection",
+    "role":"Survivor",
+    "character":"- Yoichi Asakawa",
+    "Unnamed: 4":"Empathic Connection",
+    "character killer":null,
+    "character.1":"Yoichi Asakawa"
+  },
+  {
+    "description":"Within 64\/96\/128m, you see the Auras of injured Survivors.",
+    "perk":"Empathy",
+    "role":"Survivor",
+    "character":"- Claudette Morel",
+    "Unnamed: 4":"Empathy",
+    "character killer":null,
+    "character.1":"Claudette Morel"
+  },
+  {
+    "description":"After crouching for 4s:\nYou see Auras in an expanding radius up to 44m.\nYou gain Elusive.\nYou gain Oblivious.\n\nWhen you stop crouching, or after 11s, cooldown: 60\/50\/40s.\n\"What is friend?\" \u2014Eleven",
+    "perk":"Extrasensory Perception",
+    "role":"Survivor",
+    "character":"- Eleven",
+    "Unnamed: 4":"Extrasensory Perception",
+    "character killer":null,
+    "character.1":"Eleven"
+  },
+  {
+    "description":"Whenever you Pallet-stun the Killer:\nYour item rarity is upgraded to the next tier, if possible.\nIf the item was upgraded, it recharges 75% Charges.\n\nCooldown: 30\/25\/20s.\n\"You will not take me this day!\" -Trevor",
+    "perk":"Exultation",
+    "role":"Survivor",
+    "character":"- Trevor Belmont",
+    "Unnamed: 4":"Exultation",
+    "character killer":null,
+    "character.1":"Trevor Belmont"
+  },
+  {
+    "description":"Whenever a Generator is completed, you see the Killer's Aura for 1\/2\/3s.\nWhenever you see the Killer's Aura for a duration, it is 2s longer.\n\"Ha! Your secret has been revealed!\" -Trevor",
+    "perk":"Eyes of Belmont",
+    "role":"Survivor",
+    "character":"- Trevor Belmont",
+    "Unnamed: 4":"Eyes of Belmont",
+    "character killer":null,
+    "character.1":"Trevor Belmont"
+  },
+  {
+    "description":"Whenever a Generator is completed, when the Killer gets within 24m of you, you see their Aura for 5\/7\/10s.\n\"Slow down, don't rush and try not to worry so much! The best way to beat him is to know how he thinks.\" -Lost Tapes: Murf",
+    "perk":"Dark Sense",
+    "role":"Survivor",
+    "character":null,
+    "Unnamed: 4":"Dark Sense",
+    "character killer":null,
+    "character.1":null
+  },
+  {
+    "description":"You see the Auras of the 3 Generators closest to each other and repair them 4\/5\/6% faster.",
+    "perk":"Deja Vu",
+    "role":"Survivor",
+    "character":null,
+    "Unnamed: 4":"Deja Vu",
+    "character killer":null,
+    "character.1":null
+  },
+  {
+    "description":"Every 40\/35\/30s, the Survivor with the least time in chase sees your Aura for 3s.\nWhile a Survivor sees your Aura, you see their Aura.",
+    "perk":"Deerstalker\nKiller",
+    "role":"#ERROR!",
+    "character":null,
+    "Unnamed: 4":"Deerstalker",
+    "character killer":null,
+    "character.1":null
+  },
+  {
+    "description":"Within 64\/96\/128m of you, whenever a Generator is being repaired by at least 2 Survivors, you are alerted.\nWhile that Generator is being repaired by at least 2 Survivors, you see its Aura. When it is no longer being repaired by at least 2 Survivors, this ends after 4s.\n\"Smartasses get killed. We always see to that.\" -The Legion",
+    "perk":"Discordance\nKiller - The Legion",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Discordance",
+    "character killer":"The Legion",
+    "character.1":null
+  },
+  {
+    "description":"3s after a Survivor takes damage, for 12\/16\/20s, the next time a Survivor fast-vaults a Pallet while within your Terror Radius, it is destroyed.\n\"The Garden shall be a place of perfect Joy; through Joy, nothing shall stand in our way.\" \u2013Otto Stamper",
+    "perk":"Dissolution\nKiller - The Dredge",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Dissolution",
+    "character killer":"The Dredge",
+    "character.1":null
+  },
+  {
+    "description":"Your Terror Radius is 20\/25\/30% larger.\n\"Bask in their fear.\"",
+    "perk":"Distressing\nKiller",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Distressing",
+    "character killer":null,
+    "character.1":null
+  },
+  {
+    "description":"The first time each Chest is being unlocked and each Totem is being blessed or cleansed by a Survivor, it is blocked for 8\/12\/16s.\n\"Tragic, is it not? How powerless you must feel.\" -Dracula",
+    "perk":"Dominance\nKiller - The Dark Lord",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Dominance",
+    "character killer":"The Dark Lord",
+    "character.1":null
+  },
+  {
+    "description":"Whenever you damage a Generator, for the next 30s, the first Survivor that repairs that Generator:\nThey scream, then you are alerted to their position for 4s.\nThey gain Exposed for 60s.\n\nCooldown: 60\/45\/30s.\n\u201cSuch potential in this compound... even the slightest trace causes unnatural effects.\u201d -Journal of Talbot Grimes",
+    "perk":"Dragon\u2019s Grip\nKiller - The Blight",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Dragon\u2019s Grip",
+    "character killer":"The Blight",
+    "character.1":null
+  },
+  {
+    "description":"Whenever you hook a Survivor that is not the Obsession, earn 1 token.\nWhile the Obsession is alive, for each Token:\nOther Survivors heal 2\/2.5\/3% slower.\nOther Survivors repair 2\/2.5\/3% slower.\nOther Survivors sabotage Hooks 2\/2.5\/3% slower.\n\nThe Obsession:\nHeals other Survivors 33% faster.\nUnhooks other Survivors 33% faster.\n\n\"This isn't a man...\" -Dr.Sam Loomis",
+    "perk":"Dying Light\nKiller - The Shape",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Dying Light",
+    "character killer":"The Shape",
+    "character.1":null
+  },
+  {
+    "description":"While not carrying a Survivor, Pallet-stuns are 40\/45\/50% shorter.\n\"He stops at nothing.\"",
+    "perk":"Enduring\nKiller - The Hillbilly",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Enduring",
+    "character killer":"The Hillbilly",
+    "character.1":null
+  },
+  {
+    "description":"Whenever you damage a Generator, when you down a Survivor, all Generators damaged this way:\nExplode, lose 10% progress and start regressing.\nSurvivors repairing them scream, then you see their Auras for 8\/10\/12s.\n\nCooldown: 30s.\n\"It can use weapons?\" -Jill Valentine",
+    "perk":"Eruption\nKiller - The Nemesis",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Eruption",
+    "character killer":"The Nemesis",
+    "character.1":null
+  },
+  {
+    "description":"Whenever you unhook another Survivor, you earn 1 Token(s), up to 1\/2\/3.\nWhile repairing, whenever you hit a great basic Skill Check, spend all Tokens. For each Token spent, the Generator gains 5% permanent progress.\n\"The weak are sacrificed first. It's nature, it's business... it's the truth most refuse to face.\" -Yun-jin",
+    "perk":"Fast Track",
+    "role":null,
+    "character":"- Lee Yun-Jin",
+    "Unnamed: 4":"Fast Track",
+    "character killer":null,
+    "character.1":"Lee Yun-Jin"
+  },
+  {
+    "description":"While healthy, you fast-vault 20% faster.\nWhenever you fast-vault, cooldown: 40\/35\/30s.\n\"Just need to push myself a bit further.\" -Lara Croft",
+    "perk":"Finesse",
+    "role":null,
+    "character":"- Lara Croft",
+    "Unnamed: 4":"Finesse",
+    "character killer":null,
+    "character.1":"Lara Croft"
+  },
+  {
+    "description":"Whenever a Generator is completed, earn 1 Token, up to 5.\nFor each Token:\nYou basic-break Pallets and Breakable Walls 4\/5\/6% faster.\nYou damage Generators 4\/5\/6% faster.\nYou pick-up and drop Survivors 4\/5\/6% faster.\nYou basic-vault Windows 4\/5\/6% faster.\n\n\u201cNow why don't you just fucking die?\u201d - Freddy Krueger",
+    "perk":"Fire Up\nKiller - The Nightmare",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Fire Up",
+    "character killer":"The Nightmare",
+    "character.1":null
+  },
+  {
+    "description":"While you are in the Killer's Terror Radius or chased by the Killer:\nYou see the Auras of the 5 closest Pallets and Windows.\nAfter you drop a Pallet, you start moving 50% earlier.\nWhenever you drop a Pallet, cooldown: 40\/35\/30s.\n\n\u201cEvery problem has a solution. It's only a question of complexity.\u201d \u2013 Kwon Tae-young",
+    "perk":"Five Moves Ahead",
+    "role":null,
+    "character":"- Kwon Tae-young",
+    "Unnamed: 4":"Five Moves Ahead",
+    "character killer":null,
+    "character.1":"Kwon Tae-young"
+  },
+  {
+    "description":"While walking, you gain 10\/15\/20% Haste.\nYou see your own Scratch Marks.\n\"I wanna finish what we started. I want to kill it.\" -Nancy Wheeler",
+    "perk":"Fixated",
+    "role":null,
+    "character":"- Nancy Wheeler",
+    "Unnamed: 4":"Fixated",
+    "character killer":null,
+    "character.1":"Nancy Wheeler"
+  },
+  {
+    "description":"After repairing 50\/45\/40% of Generators, while hiding in a Locker, use Active Ability Button 1 to craft a Flashbang.\nWhen you use the Flashbang:\nEveryone nearby looking at the detonation is blinded.\nThe Killer is alerted.\n\n\"Get outta my face!\" -Leon S. Kennedy",
+    "perk":"Flashbang",
+    "role":null,
+    "character":"- Leon S. Kennedy",
+    "Unnamed: 4":"Flashbang",
+    "character killer":null,
+    "character.1":"Leon S. Kennedy"
+  },
+  {
+    "description":"While downed, whenever the Killer picks you up, 50% of your recovery progress is added to your wiggle progress, up to 40\/45\/50%.\n\"Catch ya on the flip-flop.\" -Ash Williams",
+    "perk":"Flip-Flop",
+    "role":null,
+    "character":"- Ashley J. Williams",
+    "Unnamed: 4":"Flip-Flop",
+    "character killer":"Flop",
+    "character.1":"Ashley J. Williams"
+  },
+  {
+    "description":"Whenever a generator is completed, earn 1 Token, up to 5.\nFor each Token:\nYou bless and cleanse 8\/9\/10% faster.\nYou heal 8\/9\/10% faster.\nYou unhook Survivors 8\/9\/10% faster.\n\n\u201cI'm sorry\u2026 I didn't realize I was working so late.\u201d \u2013 Kwon Tae-young",
+    "perk":"Flow State",
+    "role":null,
+    "character":"- Kwon Tae-young",
+    "Unnamed: 4":"Flow State",
+    "character killer":null,
+    "character.1":"Kwon Tae-young"
+  },
+  {
+    "description":"While repairing, whenever you hit a great basic Skill Check, you see the Killer's Aura for 4\/5\/6s.\n\"I have seen great cruelty\u2026 and I have also seen another way. \" - Vittorio Toscano",
+    "perk":"Fogwise",
+    "role":null,
+    "character":"- Vittorio Toscano",
+    "Unnamed: 4":"Fogwise",
+    "character killer":null,
+    "character.1":"Vittorio Toscano"
+  },
+  {
+    "description":"While healthy and healing another Survivor without a Med-Kit, use Active Ability Button 1 to heal them instantly:\nYou take damage.\nYou gain Broken for 80\/70\/60s.\nYou become the Obsession.\n\nWhen the trial starts, you are less likely to be the Obsession.\n\"We can write our own story and decide how it really ends.\" -Zarina Kassir",
+    "perk":"For the People",
+    "role":null,
+    "character":"- Zarina Kassir",
+    "Unnamed: 4":"For the People",
+    "character killer":null,
+    "character.1":"Zarina Kassir"
+  },
+  {
+    "description":"Whenever you down a Survivor, other Survivors within 16m of the downed Survivor gain 20% Hindered for 10s. Cooldown: 40\/35\/30s.\n\u201cTHE ORGANIC MIND'S CAPACITY FOR EMPATHY GOES BEYOND HINDRANCE.\u201d \u2013HUX-A7-13",
+    "perk":"Forced Hesitation\nKiller - The Singularity",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Forced Hesitation",
+    "character killer":"The Singularity",
+    "character.1":null
+  },
+  {
+    "description":"Whenever a Survivor takes a protection hit, they gain Broken for 60\/70\/80s.",
+    "perk":"Forced Penance\nKiller - The Executioner",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Forced Penance",
+    "character killer":"The Executioner",
+    "character.1":null
+  },
+  {
+    "description":"Whenever a Survivor takes damage, you earn 1 Token, up to 6\/7\/8.\nFor each Token:\nYou hook Survivors 4% faster.\nYou pick-up and drop Survivors 4% faster.\n\n\"You tried to devour me so you have no room to complain if I eat you, do you?\" -Ken Kaneki",
+    "perk":"Forever Entwined\nKiller - The Ghoul",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Forever Entwined",
+    "character killer":"The Ghoul",
+    "character.1":null
+  },
+  {
+    "description":"Whenever you damage a Survivor with a basic attack, they drop their item.\nWithin 32\/48\/64m, you see the Auras of dropped items.\n\"Sally, I hear something. Stop! Stop!\" - Franklin",
+    "perk":"Franklin's Demise\nKiller - The Cannibal",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Franklin's Demise",
+    "character killer":"The Cannibal",
+    "character.1":null
+  },
+  {
+    "description":"Whenever you finish repairing a Generator with at least 1 other Survivor, Survivors who finished repairing it repair 5% faster for 100\/110\/120s.\n\u201cC'mon, let's do this.\u201d \u2013Thalita Lyra",
+    "perk":"Friendly Competition",
+    "role":null,
+    "character":"- Thalita Lyra",
+    "Unnamed: 4":"Friendly Competition",
+    "character killer":null,
+    "character.1":"Thalita Lyra"
+  },
+  {
+    "description":"Whenever you hook a Survivor that is not the Obsession:\nThe Obsession gains Exposed for 20s.\nYou see the Obsession's Aura for 6\/8\/10s.\n\nWhenever you hook the Obsession, another Survivor:\nScreams, then you are alerted.\nBecomes the Obsession.\n\n\"I got some fresh meat lined up, and I'm not gonna let you spoil it, not this time!\" -Chucky",
+    "perk":"Friends \u2018Til the End\nKiller - The Good Guy",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Friends \u2018Til the End",
+    "character killer":"The Good Guy",
+    "character.1":null
+  },
+  {
+    "description":"Whenever you hook the Obsession:\nYou gain 10% Haste for 14\/16\/18s.\nYou gain Undetectable for 14\/16\/18s.\n\nWhenever the Obsession is unhooked, the Survivor who unhooked them becomes the Obsession.\n\"You have no idea what I have planned for you. It'll be in the news for weeks: I'll make sure of it.\" \u2013The Ghost Face",
+    "perk":"Furtive Chase\nKiller - The Ghost Face",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Furtive Chase",
+    "character killer":"The Ghost Face",
+    "character.1":null
+  },
+  {
+    "description":"While chasing the Obsession, whenever you basic-break Pallets or Breakable Walls, or damage Generators, you gain 7% Haste for 8\/9\/10s.\nWhenever you damage the Survivor with the most chase time with a basic-attack, they become the Obsession.\n\u201cThis one might actually be a challenge... \u201d -Adriana Imai",
+    "perk":"Game Afoot\nKiller - The Skull Merchant",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Game Afoot",
+    "character killer":"The Skull Merchant",
+    "character.1":null
+  },
+  {
+    "description":"Whenever a Survivor takes damage, for the next 30s, whenever a Survivor repairing a Generator hits a good basic Skill Check, you see their Aura for 6\/7\/8s.\n\"Sometimes a man's best work is what puts him in the grave.\" -The prison warden",
+    "perk":"Gearhead\nKiller - The Deathslinger",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Gearhead",
+    "character killer":"The Deathslinger",
+    "character.1":null
+  },
+  {
+    "description":"Whenever a Survivor takes damage, they gain Exhausted for 6\/7\/8s.\n\u201cTHE ORGANIC BODY IS SO LIMITED.\u201d \u2013HUX-A7-13",
+    "perk":"Genetic Limits\nKiller - The Singularity",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Genetic Limits",
+    "character killer":"The Singularity",
+    "character.1":null
+  },
+  {
+    "description":"While you have Exhausted, your Scratch Marks disappear 50% faster.\nYou lose Exhausted 5\/7.5\/10% faster.\n\u201cLet's take it to the bridge!\u201d -Vee Boonyasak",
+    "perk":"Ghost Notes",
+    "role":null,
+    "character":"- Vee Boonyasak",
+    "Unnamed: 4":"Ghost Notes",
+    "character killer":null,
+    "character.1":"Vee Boonyasak"
+  },
+  {
+    "description":"Whenever you hook a Survivor for the first time, earn 1 Token.\nWhen you move 16m away from the hooked Survivor, all Generators are blocked for 6\/8\/10s.\nWhen you have 4 Tokens, when you move 16m away from the hooked Survivor:\nAll Generators are blocked for 40s.\nYou see the Obsession's Aura for 10s.\n\n\"Are we nothing but prisoners to our sorrow?\" -Carmina Mora",
+    "perk":"Grim Embrace\nKiller - The Artist",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Grim Embrace",
+    "character killer":"The Artist",
+    "character.1":null
+  },
+  {
+    "description":"When you have blessed or cleansed a Totem and unlocked a Chest, whenever you would scream, you see the Killer's Aura for 3\/4\/5s instead.\n\"Got to keep quiet. That thing is still out there.\" -Lara Croft",
+    "perk":"Hardened",
+    "role":null,
+    "character":"- Lara Croft",
+    "Unnamed: 4":"Hardened",
+    "character killer":null,
+    "character.1":"Lara Croft"
+  },
+  {
+    "description":"Exit Gate Switches with at least 80% progress regress at 80\/90\/100% speed.\nWhile they are regressing, Survivors see the Exit Gate Lights flicker randomly.\n\"There will be no redemption for you.\" -Springtrap",
+    "perk":"Haywire\nKiller - The Animatronic",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Haywire",
+    "character killer":"The Animatronic",
+    "character.1":null
+  },
+  {
+    "description":"After hiding in a Locker for 3s, fast-exit to stun the Killer for 3s if they are within 2.5m, then gain Exhausted for 60\/50\/40s.\n\u201cPeople are remembered for what they overcome. You run or you face your fears and remind the world who you are.\u201d \u2013Jane Romero",
+    "perk":"Head On",
+    "role":null,
+    "character":"- Jane Romero",
+    "Unnamed: 4":"Head On",
+    "character killer":null,
+    "character.1":"Jane Romero"
+  },
+  {
+    "description":"Whenever you damage a Generator, it is compromised.\nWhen that Generator is completed by Survivors, your basic-attack cooldowns are 25% shorter for 40\/50\/60s.\nOnly 1 Generator can be compromised at a time.\n\"You only think you are in control...\" -Springtrap",
+    "perk":"Help Wanted\nKiller - The Animatronic",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Help Wanted",
+    "character killer":"The Animatronic",
+    "character.1":null
+  },
+  {
+    "description":"When the trial starts, a Dull Totem ignites.\nWhenever you damage a Survivor, Upright Pallets within 24\/28\/32m of them are blocked for 15s.\n\u201cIt would be no leap of the imagination to suggest that the trials are a biological response of sorts.\u201d -Journal of Talbot Grimes",
+    "perk":"Hex: Blood Favor\nKiller - The Blight",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Hex: Blood Favor",
+    "character killer":"The Blight",
+    "character.1":null
+  },
+  {
+    "description":"The first time a Survivor medium or fast-vaults a Window, a Dull Totem ignites.\nThe last 4\/5\/6 Windows Survivors medium or fast-vault are blocked.\nYou basic-vault blocked Windows 15% faster.\nYou see the Auras of blocked Windows within 24m.\n\"You have no control. People like you never did.\" -Hak Ji-woon",
+    "perk":"Hex: Crowd Control\nKiller - The Trickster",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Hex: Crowd Control",
+    "character killer":"The Trickster",
+    "character.1":null
+  },
+  {
+    "description":"When the trial starts, a Dull Totem ignites.\nWhenever a Survivor is unhooked while you are at least 24m away, earn 1 Token, up to 5:\n2 Tokens | 10s after hooking a Survivor, gain 3\/4\/5% Haste for 10s.\n3 Tokens | Survivors gain Exposed.\n5 Tokens | You can Kill downed Survivors.\n\n\u201cIf you do nothing, you have their blood on your hands. If you save them, her hunger grows.\u201c",
+    "perk":"Hex: Devour Hope\nKiller - The Hag",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Hex: Devour Hope",
+    "character killer":"The Hag",
+    "character.1":null
+  },
+  {
+    "description":"Whenever you damage a Survivor, they are hexed and a Dull Totem ignites.\nEvery 35\/30\/25s, other Survivors not within your Terror Radius scream, then you see their Auras for 2s.\nWhen the hexed Survivor is downed or becomes healthy, the Hex Totem is extinguished.\n\"I shall make an example of one. These mewling worms will never know peace.\"- Tarhos Kov\u00e1cs",
+    "perk":"Hex: Face the Darkness\nKiller - The Knight",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Hex: Face the Darkness",
+    "character killer":"The Knight",
+    "character.1":null
+  },
+  {
+    "description":"When the trial starts, 2 Dull Totems ignite.\nWhen either of those Hex Totems is blessed or cleansed:\nAll Survivors gain Exposed for 40\/50\/60s.\nThe other Totem is extinguished.\n\n\u201cHer home became profane.\u201d",
+    "perk":"Hex: Haunted Ground\nKiller - The Spirit",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Hex: Haunted Ground",
+    "character killer":"The Spirit",
+    "character.1":null
+  },
+  {
+    "description":"The first time you hook a Survivor, a Dull Totem ignites.\nThe Auras of Generators show their progress.\nWhen 1 Generator remains:\nAll Generators explode, lose 6\/8\/10% progress and start regressing.\nThe Hex Totem is extinguished.\n\n\u201cYou... let us in. And now, you are going to have to let us stay.\u201d -Henry Creel",
+    "perk":"Hex: Hive Mind\nKiller - The First",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Hex: Hive Mind",
+    "character killer":"The First",
+    "character.1":null
+  },
+  {
+    "description":"When the trial starts, a Dull Totem ignites.\nWhenever you hook a Survivor, earn 1 Token. For each Token, Basic Skill Check warnings appear later and good success zones are smaller.\nWhile you have 5 Tokens, Basic Skill Check warnings don't appear.\nWhenever a Survivor misses a basic Skill Check, they lose 2\/4\/6% more progress.",
+    "perk":"Hex: Huntress Lullaby\nKiller - The Huntress",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Hex: Huntress Lullaby",
+    "character killer":"The Huntress",
+    "character.1":null
+  },
+  {
+    "description":"When all Generators are completed, a Dull Totem ignites:\nSurvivors gain Exposed.\nYou gain 2\/3\/4% Haste.\n\nWithin 4m, Survivors see the Hex Totem's Aura, expanding to 24m over 30s.\n\"And the beast became faster and more powerful as if The Entity's shadowy whips were lashing at its back.\"",
+    "perk":"Hex: No One Escapes Death\nKiller",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Hex: No One Escapes Death",
+    "character killer":null,
+    "character.1":null
+  },
+  {
+    "description":"After you damage Survivors with a basic-attack 8 times, a Dull Totem ignites.\nWhenever you damage a Survivor with a basic-attack, they gain 5% Hindered for 10\/12.5\/15s.\n\"All of the liabilities of this world are due to the inadequacies of the person involved.\" -Ken Kaneki",
+    "perk":"Hex: Nothing But Misery\nKiller - The Ghoul",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Hex: Nothing But Misery",
+    "character killer":"The Ghoul",
+    "character.1":null
+  },
+  {
+    "description":"When the trial starts, a Dull Totem ignites and hexes the farthest Generator from it.\nAfter a Survivor repairs the hexed Generator for 5 seconds:\nYou gain Undetectable for 20\/25\/30s.\nFor that time, your Terror Radius is set to that Generator.\n\nWhen the hexed Generator is repaired, the next farthest Generator is hexed.\n\u201cFrom salvation's ruin, be warned\/death comes from all around.\u201d -Giovanni Serrata's Fog Hill",
+    "perk":"Hex: Overture of Doom\nKiller - The Krasue",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Hex: Overture of Doom",
+    "character killer":"The Krasue",
+    "character.1":null
+  },
+  {
+    "description":"You see the Auras of cleansed Totems, and can rekindle each once.\nWithin 16m, Survivors see the Auras of Rekindled Totems.\nWhile a totem is rekindled, Survivors heal and repair 20% slower, plus 1\/2\/3% for each additional Rekindled Totem.\nWhen all 5 Totems are rekindled at once, they are blocked.\n\u201cA pentimento is concealed art. There is often a desire to see that which is beyond.\" -A Guide to Art & Process",
+    "perk":"Hex: Pentimento\nKiller - The Artist",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Hex: Pentimento",
+    "character killer":"The Artist",
+    "character.1":null
+  },
+  {
+    "description":"The first time you hook each Survivor, they are hexed and a Dull Totem ignites.\nFor 90s, the Hex Totem is blocked to other Survivors.\nThe hexed Survivors:\n\nGain Oblivious.\nWithin 24\/20\/16m of the Hex totem, they see it's Aura.\n\n\"We came. Now you must come with us. Taste our pleasures.\" -Pinhead",
+    "perk":"Hex: Plaything\nKiller - The Cenobite",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Hex: Plaything",
+    "character killer":"The Cenobite",
+    "character.1":null
+  },
+  {
+    "description":"When the trial starts, a Dull Totem ignites.\nWhenever a Survivor starts blessing or cleansing a Totem, they gain Oblivious for 40\/50\/60s.\nWhenever a Hex Totem is blessed or cleansed, you see the Auras of all Survivors for 20s.\n\"Bloody fool, you pulled the trigger on yourself.\" -Caleb Quinn",
+    "perk":"Hex: Retribution\nKiller - The Deathslinger",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Hex: Retribution",
+    "character killer":"The Deathslinger",
+    "character.1":null
+  },
+  {
+    "description":"When the trial starts, a Dull Totem ignites.\nWhile a Generator is not being repaired, it regresses at 100\/125\/150% speed.\n\u201cA curse is upon you. It will be your ruin.\u201d",
+    "perk":"Hex: Ruin\nKiller - The Hag",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Hex: Ruin",
+    "character killer":"The Hag",
+    "character.1":null
+  },
+  {
+    "description":"After you hook 3 different Survivors, a Dull Totem ignites.\nWhile chasing a Survivor, whenever you basic-break a Pallet, Survivors within 13m:\nScream.\nGain 11\/12\/13% Hindered for 3s.\n\n\"There was a scream from the forest. Like someone was attacking her.\" -Mount Ormond Missing Person Report",
+    "perk":"Hex: Scared to Death\nKiller - The Slasher",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Hex: Scared to Death",
+    "character killer":"The Slasher",
+    "character.1":null
+  },
+  {
+    "description":"When the trial starts, a Dull Totem ignites.\nWhenever you damage a Survivor, they gain Blindness.\nThis applies for up to 2\/3\/4 Survivors.\n\u201cShe touched your skin, you bear the witch's mark!\u201d",
+    "perk":"Hex: The Third Seal\nKiller - The Hag",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Hex: The Third Seal",
+    "character killer":"The Hag",
+    "character.1":null
+  },
+  {
+    "description":"When the trial starts, a Dull Totem ignites.\nFor each Dull and Hex Totem remaining, you have 1 Token.\nFor each Token, Survivors bless and cleanse totems 8\/10\/12% slower.",
+    "perk":"Hex: Thrill of the Hunt\nKiller",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Hex: Thrill of the Hunt",
+    "character killer":null,
+    "character.1":null
+  },
+  {
+    "description":"While this Hex is dull, each time you are blinded or stunned by a Survivor 4\/3\/2 times, a Dull Totem ignites.\nWhenever you are blinded or stunned by a Survivor you are not carrying, they are blinded for 1.5s.\n\u201cFrom now on, no more Mr. Good Guy.\u201d -Chucky",
+    "perk":"Hex: Two Can Play\nKiller - The Good Guy",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Hex: Two Can Play",
+    "character killer":"The Good Guy",
+    "character.1":null
+  },
+  {
+    "description":"When the trial starts, a Dull Totem ignites.\nWhen another Hex Totem is blessed or cleansed, it replaces this one and keeps any Tokens it had.\nYou see the Auras of Survivors within 2\/3\/4m of Dull Totems.",
+    "perk":"Hex: Undying\nKiller - The Blight",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Hex: Undying",
+    "character killer":"The Blight",
+    "character.1":null
+  },
+  {
+    "description":"The first time a Generator is completed, a Dull Totem ignites.\nThe Obsession:\nRepairs 27\/30\/33% slower.\nSees the Hex Totem's Aura within 12m.\n\n\"So toil, mortal, toil! Your effort will be for naught!\" - Dracula",
+    "perk":"Hex: Wretched Fate\nKiller - The Dark Lord",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Hex: Wretched Fate",
+    "character killer":"The Dark Lord",
+    "character.1":null
+  },
+  {
+    "description":"When the trial starts, 2 more Chests appear.\nWhenever a Survivor picks-up an item or starts unlocking a Chest within 32\/48\/64m of you, you are alerted.",
+    "perk":"Hoarder\nKiller - The Twins",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Hoarder",
+    "character killer":"The Twins",
+    "character.1":null
+  },
+  {
+    "description":"When all Generators are completed, you gain 3\/4\/5% Haste.\n\"Buckle up, fuckos! Let's roll!\" -Lost Tapes: Nikki",
+    "perk":"Hope",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Hope",
+    "character killer":null,
+    "character.1":null
+  },
+  {
+    "description":"Whenever you are stunned by a Survivor, they gain Exposed for 20\/25\/30s. Cooldown: 20s.\n\"You have made a grave mistake, standing in opposition to me this day.\" - Tarhos Kov\u00e1cs",
+    "perk":"Hubris\nKiller - The Knight",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Hubris",
+    "character killer":"The Knight",
+    "character.1":null
+  },
+  {
+    "description":"Whenever a Survivor gets within 8m of a locked Chest, you see their Aura for 3\/4\/5s.\nYou can lock unlocked Chests. Cooldown: 10s.\nYou see the Auras of locked Chests.\n\"Come running, one and all, and see what fortune awaits you.\" - Dracula",
+    "perk":"Human Greed\nKiller - The Dark Lord",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Human Greed",
+    "character killer":"The Dark Lord",
+    "character.1":null
+  },
+  {
+    "description":"Whenever you hit a great basic Skill Check, you earn 1 Token, up to 6.\nFor each Token, basic Skill Checks:\nAppear 4% more often.\nSpin 4% faster.\nWhenever you hit a great, give 10\/20\/30% more progress.\n\nWhenever you miss a basic Skill Check, hit a good Skill Check, or stop healing or repairing, lose all Tokens.",
+    "perk":"Hyperfocus",
+    "role":null,
+    "character":"- Rebecca Chambers",
+    "Unnamed: 4":"Hyperfocus",
+    "character killer":null,
+    "character.1":"Rebecca Chambers"
+  },
+  {
+    "description":"Whenever a healthy Survivor becomes injured, all injured Survivors gain Oblivious for 30\/35\/40s. Cooldown: 20s.\n\"Sorry I got a little jumpy there. Didn't know quite what to expect.\" -Robert Kendo",
+    "perk":"Hysteria\nKiller - The Nemesis",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Hysteria",
+    "character killer":"The Nemesis",
+    "character.1":null
+  },
+  {
+    "description":"Whenever a Survivor fast-enters or fast-exits a Locker, or medium or fast-vaults within 48m of you, you see their Aura for 8s. Cooldown: 60\/45\/30s.\n\u201cThere is no need to worry. I've been preparing my whole life for this.\" \u2013The Ghost Face",
+    "perk":"I'm All Ears\nKiller - The Ghost Face",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"I'm All Ears",
+    "character killer":"The Ghost Face",
+    "character.1":null
+  },
+  {
+    "description":"Whenever a Survivor is downed, Survivors within your Terror Radius scream and you are alerted for 4\/5\/6s.\n\u201cHorror overcomes the heart of infidels who cry at the feet of the fallen.\u201d (Hymn of Praise, 11. 4)",
+    "perk":"Infectious Fright\nKiller - The Plague",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Infectious Fright",
+    "character killer":"The Plague",
+    "character.1":null
+  },
+  {
+    "description":"Whenever the Killer damages another Survivor, you see the Killer's Aura for 6\/8\/10s.\nYou see other Survivors' Scratch Marks.\n\"The death, the trauma, the fear\u2026 it all leads here. The Overlap.\" \u2013Haddie Kaur, Ravages of the Abyss Episode 11",
+    "perk":"Inner Focus",
+    "role":null,
+    "character":"- Haddie Kaur",
+    "Unnamed: 4":"Inner Focus",
+    "character killer":null,
+    "character.1":"Haddie Kaur"
+  },
+  {
+    "description":"Whenever you cleanse a Totem, while injured and not Broken, after hiding in a Locker for 10\/9\/8s, you become healthy instantly.\n\u201cAll this time I've been trying so hard to pretend like everything's fine, but it's not.\u201d -Nancy Wheeler",
+    "perk":"Inner Strength",
+    "role":null,
+    "character":"- Nancy Wheeler",
+    "Unnamed: 4":"Inner Strength",
+    "character killer":null,
+    "character.1":"Nancy Wheeler"
+  },
+  {
+    "description":"After being idle for 3\/2\/1s, you gain Undetectable until you act.",
+    "perk":"Insidious\nKiller",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Insidious",
+    "character killer":null,
+    "character.1":null
+  },
+  {
+    "description":"While in the Basement next to the circle, use Active Ability Button 2 to invoke. While invoking, other Survivors see your Aura and can join your Invocation.\nWhen the Invocation is completed:\nWhenever the Killer scares a Crow while a Survivor is in their Terror Radius, all Survivors see the Killer's Aura for 1\/1.5\/2s.\nYou become injured.\nYou gain Broken.\n\nEach Invocation can only be completed once per trial.\n\"Remember your training. They taught you all about the crows.\" -Taurie Cain",
+    "perk":"Invocation: Treacherous Crows",
+    "role":null,
+    "character":"- Taurie Cain",
+    "Unnamed: 4":"Invocation: Treacherous Crows",
+    "character killer":null,
+    "character.1":"Taurie Cain"
+  },
+  {
+    "description":"While in the Basement next to the circle, use Active Ability Button 1 to invoke. While invoking, other Survivors see your Aura and can join your Invocation.\nWhen the Invocation is completed:\nAll Generators gain 8\/9\/10 permanent charges.\nYou become injured.\nYou gain Broken.\n\nEach Invocation can only be completed once per trial.\n\"I call upon the spirits of the night, to aid us in our desperate flight!\" -Sable",
+    "perk":"Invocation: Weaving Spiders",
+    "role":null,
+    "character":"- Sable Ward",
+    "Unnamed: 4":"Invocation: Weaving Spiders",
+    "character killer":null,
+    "character.1":"Sable Ward"
+  },
+  {
+    "description":"While carrying a Survivor:\nThey wiggle 4\/8\/12% slower.\nTheir wiggle is 75% weaker.",
+    "perk":"Iron Grasp\nKiller",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Iron Grasp",
+    "character killer":null,
+    "character.1":null
+  },
+  {
+    "description":"Whenever a Survivor exits a Locker:\nThey gain Exposed for 30s.\nThey scream, then you are alerted to their location for 4s.\n\nYou open Lockers 30\/40\/50% faster.\n\u201cThis is no place for cowards.\u201d -The Legion",
+    "perk":"Iron Maiden\nKiller - The Legion",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Iron Maiden",
+    "character killer":"The Legion",
+    "character.1":null
+  },
+  {
+    "description":"While injured and not Exhausted, your Grunts of Pain are 80\/90\/100% quieter.",
+    "perk":"Iron Will",
+    "role":null,
+    "character":"- Jake Park",
+    "Unnamed: 4":"Iron Will",
+    "character killer":null,
+    "character.1":"Jake Park"
+  },
+  {
+    "description":"While you are hooked, all Survivors see each others' Auras. While the Killer is within 8\/12\/16m, all Survivors sees the Killer's Aura.\nWhile another Survivor is hooked, you see the Auras of other Survivors. While the Killer is within 8\/12\/16m of the hooked Survivor, you see the Killer's Aura.\n\u201cBe kind to one another. We're all in this together.\u201d -Lost Tapes: Sujan",
+    "perk":"Kindred",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Kindred",
+    "character killer":null,
+    "character.1":null
+  },
+  {
+    "description":"Whenever a Survivor drops a Pallet, for the next 6s, if they move 6m away from it, they gain 5% Hindered for 3\/4\/5s.\n\"Oh, that gun's no good. The old way\u2026 with a sledge! You see, that way's better. They die better that way.\" -Nubbins Sawyer",
+    "perk":"Knock Out\nKiller - The Cannibal",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Knock Out",
+    "character killer":"The Cannibal",
+    "character.1":null
+  },
+  {
+    "description":"Whenever a Survivor within 36m of you scares a Crow, they gain Exhausted for 6\/8\/10s. Cooldown: 5s.\n\u201cSubmit to me. It is inevitable.\u201d - Vecna",
+    "perk":"Languid Touch\nKiller - The Lich",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Languid Touch",
+    "character killer":"The Lich",
+    "character.1":null
+  },
+  {
+    "description":"After hiding for 120\/105\/90s within the Killer's Terror Radius, when you fast-vault, once per trial, stun the Killer for 3s if they are within 2.5m.\n\"Some bullies, you can live with. Others, you gotta fight.\" - Michonne Grimes",
+    "perk":"Last Stand",
+    "role":null,
+    "character":"- Michonne Grimes",
+    "Unnamed: 4":"Last Stand",
+    "character killer":null,
+    "character.1":"Michonne Grimes"
+  },
+  {
+    "description":"Within 10m of you, other Survivors:\nCleanse Totems 20\/25\/30% faster.\nHeal 20\/25\/30% faster.\nOpen Exit Gates 20\/25\/30% faster.\nSabotage Hooks 20\/25\/30% faster.\nUnhook Survivors 20\/25\/30% faster.\nUnlock Chests 20\/25\/30% faster.\n\nAfter they leave your range, this ends after 20s.",
+    "perk":"Leader",
+    "role":null,
+    "character":"- Dwight Fairfield",
+    "Unnamed: 4":"Leader",
+    "character killer":null,
+    "character.1":"Dwight Fairfield"
+  },
+  {
+    "description":"When all other Survivors are dead, while within 24\/28\/32m of the Hatch, you see it's Aura.\n\"I'm not horseshittin' around. I'm doing this alone!\" -Bill",
+    "perk":"Left Behind",
+    "role":null,
+    "character":"- William \"Bill\" Overbeck",
+    "Unnamed: 4":"Left Behind",
+    "character killer":null,
+    "character.1":"William \"Bill\" Overbeck"
+  },
+  {
+    "description":"Whenever you bless or cleanse 1 Totem, while healing another Survivor and only once per Survivor, use Active Ability Button 2 to give them 2\/3\/4 permanent healing charges.\n\"Walk it off, will you? We still have work to do.\" -Shane Wiigwaas",
+    "perk":"Lend a Hand",
+    "role":null,
+    "character":"- Shane Wiigwaas",
+    "Unnamed: 4":"Lend a Hand",
+    "character killer":null,
+    "character.1":"Shane Wiigwaas"
+  },
+  {
+    "description":"When the trial starts, you see the Auras of all Survivors for 7\/8\/9s.\nWhenever you see a Survivor's Aura for a duration, it is 2s longer.\n\"...it knows what it wants and won't stop till it gets it.\" -Carlos Oliveira",
+    "perk":"Lethal Pursuer\nKiller - The Nemesis",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Lethal Pursuer",
+    "character killer":"The Nemesis",
+    "character.1":null
+  },
+  {
+    "description":"Whenever a Survivor unhooks another or themselves, they heal 20\/25\/30% slower for 60s.\n\u201cGood. Now we can move in for the kill.\u201d -Adriana Imai",
+    "perk":"Leverage\nKiller - The Skull Merchant",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Leverage",
+    "character killer":"The Skull Merchant",
+    "character.1":null
+  },
+  {
+    "description":"While healthy and running, your footsteps are silent to the Killer.\nWhenever you do a fast-action, cooldown: 14\/12\/10s.\n\u201cCome on, cat.\u201d \u2013Ellen Ripley",
+    "perk":"Light-footed",
+    "role":null,
+    "character":"- Ellen Ripley",
+    "Unnamed: 4":"Light-footed",
+    "character killer":"footed",
+    "character.1":"Ellen Ripley"
+  },
+  {
+    "description":"Whenever a Survivor attempts to blind you, you see their Aura for 6\/8\/10s.\nYou cannot be blinded.\n\"These monsters\u2026 they adapt! They emerge with strange new abilities.\" -Vigo's Journal",
+    "perk":"Lightborn\nKiller - The Hillbilly",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Lightborn",
+    "character killer":"The Hillbilly",
+    "character.1":null
+  },
+  {
+    "description":"Your Scratch Marks disappear 3\/4\/5s faster and appear more spread out.\n\"Take it slow, he knows where you've been\u2026 just like I've always said: live slow and die old.\" -Lost Tapes: Dylan",
+    "perk":"Lightweight",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Lightweight",
+    "character killer":null,
+    "character.1":null
+  },
+  {
+    "description":"Whenever you medium or fast-vault:\nYou gain 50% Haste for 3s.\nYou gain Exhausted for 60\/50\/40s.\n\n\u201cU mad?\u201d -Feng Min",
+    "perk":"Lithe",
+    "role":null,
+    "character":"- Feng Min",
+    "Unnamed: 4":"Lithe",
+    "character killer":null,
+    "character.1":"Feng Min"
+  },
+  {
+    "description":"When all other Survivors are downed or hooked, for 70\/80\/90s:\nYou make no Grunts of Pain.\nYou leave no Pools of Blood.\nYou leave no Scratch Marks.",
+    "perk":"Low Profile",
+    "role":null,
+    "character":"- Ada Wong",
+    "Unnamed: 4":"Low Profile",
+    "character killer":null,
+    "character.1":"Ada Wong"
+  },
+  {
+    "description":"While injured, for up to 40\/50\/60s:\nYou leave no Pools of Blood.\nYou leave no Scratch Marks.\n\nFor each second spent healing another Survivor, recharge the duration by 1s.\n\u201cThat's not enough to beat me. Not even close.\u201d -Yui Kimura",
+    "perk":"Lucky Break",
+    "role":null,
+    "character":"- Yui Kimura",
+    "Unnamed: 4":"Lucky Break",
+    "character killer":null,
+    "character.1":"Yui Kimura"
+  },
+  {
+    "description":"While hiding in a Locker, you make no Grunts of Pain.\nWhenever you exit a Locker, for 30s:\nYou see the Aura of the closest Generator.\nYou see the Auras of other Survivors.\nYou make no Grunts of Pain.\nYou leave no Pools of Blood.\n\nCooldown: 35\/30\/25s.\n\u201cYou are my\u2026 lucky star\u2026\u201d \u2013Ellen Ripley",
+    "perk":"Lucky Star",
+    "role":null,
+    "character":"- Ellen Ripley",
+    "Unnamed: 4":"Lucky Star",
+    "character killer":null,
+    "character.1":"Ellen Ripley"
+  },
+  {
+    "description":"After taking 3 protection hits, while injured and until you go down, the next time you would be downed by the Killer, take no damage instead.\nWhen you become healthy, while you are at least 12\/14\/16m from the Killer, they see your Aura.\nWhen the trial starts, you are more likely to be the Obsession.\n\"Evil has a bullseye on my back the size of Tiger Stadium.\" -Ash Williams",
+    "perk":"Mettle of Man",
+    "role":null,
+    "character":"- Ashley J. Williams",
+    "Unnamed: 4":"Mettle of Man",
+    "character killer":null,
+    "character.1":"Ashley J. Williams"
+  },
+  {
+    "description":"After repairing 20% of Generators, while next to a Chest, Exit Gate Switch, Generator, or Totem, use Active Ability Button 2 to create a static illusion for 40\/50\/60s.\n\"Just... stay there... perfect!\" -Baermar",
+    "perk":"Mirrored Illusion",
+    "role":null,
+    "character":"- Aestri Yazar",
+    "Unnamed: 4":"Mirrored Illusion",
+    "character killer":null,
+    "character.1":"Aestri Yazar"
+  },
+  {
+    "description":"After you rummage or unlock 2 Chests, while not Broken, when you become injured, gain Broken.\nAfter 80\/70\/60s, if you are not downed, you are instantly healed.\n\"Never lose hope for a brighter tomorrow.\" -Trevor",
+    "perk":"Moment of Glory",
+    "role":null,
+    "character":"- Trevor Belmont",
+    "Unnamed: 4":"Moment of Glory",
+    "character killer":null,
+    "character.1":"Trevor Belmont"
+  },
+  {
+    "description":"While chasing a Survivor, your Terror Radius is 5\/10\/15% bigger.\nWhile not chasing a Survivor, your Terror Radius is 15\/20\/25% smaller.\n\"It's time for your treatment!\" -The Doctor",
+    "perk":"Monitor & Abuse\nKiller - The Doctor",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Monitor & Abuse",
+    "character killer":"The Doctor",
+    "character.1":null
+  },
+  {
+    "description":"Whenever a Survivor blinds you, Locker-stuns or Pallet-stuns you, they become the Obsession.\nWhenever a Survivor becomes the Obsession:\nThey gain Oblivious for 40\/50\/60s.\nYou see their Aura for 8s.\n\n\u201cOnly a fool would spit in a demon's face and declare victory.\u201d -Renjiro's Doctrine 4:9",
+    "perk":"Nemesis\nKiller - The Oni",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Nemesis",
+    "character killer":"The Oni",
+    "character.1":null
+  },
+  {
+    "description":"When the trial starts, you become injured, then:\nYou gain Broken.\nYour Grunts of Pain are 100% quieter.\nYou leave no Pools of Blood.\nYou recover 15\/20\/25% faster.\nYou can fully recover.\n\n\u201cI lost it and lamped him one. Had a few pints afterwards, moved on. Couldn't be mithered with it. Can't be arsed.\u201d -David King",
+    "perk":"No Mither",
+    "role":null,
+    "character":"- David King",
+    "Unnamed: 4":"No Mither",
+    "character killer":null,
+    "character.1":"David King"
+  },
+  {
+    "description":"When all Generators are completed:\nYou heal 50\/75\/100% faster.\nYou unhook other Survivors 50\/75\/100% faster.\nWhenever you unhook a Survivor, they gain 10% more Haste.\nYou see the Auras of other Survivors.\n\n\u201cYeah, no shit. But we can outsmart and overthrow him if we work together. Don't be predictable and selfish!\u201d -Lost Tapes: Clyde",
+    "perk":"No One Left Behind",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"No One Left Behind",
+    "character killer":null,
+    "character.1":null
+  },
+  {
+    "description":"While you are the Obsession, every 30s, the Killer sees your Aura for 3s.\nWhile the Killer sees your Aura:\nYou see their Aura.\nYou cleanse totems 2\/4\/6% faster.\nYou heal 2\/4\/6% faster.\nYou repair 2\/4\/6% faster.\n\nWhen the trial starts, you are more likely to be the Obsession.\n\u201cHe was watching me!\u201d -Laurie Strode",
+    "perk":"Object of Obsession",
+    "role":null,
+    "character":"- Laurie Strode",
+    "Unnamed: 4":"Object of Obsession",
+    "character killer":null,
+    "character.1":"Laurie Strode"
+  },
+  {
+    "description":"Until all Generators are completed, whenever you are unhooked, for the next 30\/35\/40s:\nYou gain Endurance.\nYour Grunts of Pain are 100% quieter.\nThe Killer cannot see your Aura.\n\n\"Trust me, I investigate thoroughly and discreetly.\" -Zarina Kassir",
+    "perk":"Off the Record",
+    "role":null,
+    "character":"- Zarina Kassir",
+    "Unnamed: 4":"Off the Record",
+    "character killer":null,
+    "character.1":"Zarina Kassir"
+  },
+  {
+    "description":"While idle, use Active Ability Button 2 to perform, empowering all Survivors within 16m for up to 15s. While you are performing, other Survivors will see your Aura. You get special Skill Checks during that time: while healing or repairing, basic Skill Checks are 20% more likely to appear.\nIf you complete the performance, the effect ends after 90s. Cooldown: 110\/100\/90s.\n\u201cWe are loud! We are heavy! WE ARE AXEKICK!\u201d - Vee Boonyasak",
+    "perk":"ONE-TWO-THREE-FOUR!",
+    "role":null,
+    "character":"- Vee Boonyasak",
+    "Unnamed: 4":"ONE-TWO-THREE-FOUR!",
+    "character killer":"TWO-THREE-FOUR!",
+    "character.1":"Vee Boonyasak"
+  },
+  {
+    "description":"All Survivors see Auras that have a range from 8\/12\/16m farther.\n\u201cPaying attention is what kept me alive through the years. That, and my good looks of course.\u201d -Ace",
+    "perk":"Open-Handed",
+    "role":null,
+    "character":"- Ace Visconti",
+    "Unnamed: 4":"Open-Handed",
+    "character killer":"Handed",
+    "character.1":"Ace Visconti"
+  },
+  {
+    "description":"Whenever you take damage:\nYou retain your speed boost for 2s longer.\nYou gain Exhausted for 60\/50\/40s.\n\"After careful analysis, we're getting the hell out of here!\" -Jonah Vasquez",
+    "perk":"Overcome",
+    "role":null,
+    "character":"- Jonah Vasquez",
+    "Unnamed: 4":"Overcome",
+    "character killer":null,
+    "character.1":"Jonah Vasquez"
+  },
+  {
+    "description":"Whenever a Survivor uses an item within 32m of you, they gain Exhausted for 15s.\nWhenever a Survivor within 32m of you gains Exhausted, you see the closest Exhausted Survivor's Aura for 2\/3\/4s. Cooldown: 25s.\n\"Shit!! I dropped the gauze!\"",
+    "perk":"Overwhelming Presence\nKiller - The Doctor",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Overwhelming Presence",
+    "character killer":"The Doctor",
+    "character.1":null
+  },
+  {
+    "description":"Whenever you bless or cleanse a Totem, until you take damage, you repair 8\/9\/10% faster. If that Totem was a Hex Totem, the effect is doubled.\n\"The Ravage senses us. We need to work fast.\" -Haddie Kaur, Ravages of the Abyss Episode 9",
+    "perk":"Overzealous",
+    "role":null,
+    "character":"- Haddie Kaur",
+    "Unnamed: 4":"Overzealous",
+    "character killer":null,
+    "character.1":"Haddie Kaur"
+  },
+  {
+    "description":"Whenever you stun the Killer, for 5\/6\/7s:\nYou make no Grunts of Pain.\nYou leave no Pools of Blood.\nYou leave no Scratch Marks.",
+    "perk":"Parental Guidance",
+    "role":null,
+    "character":"- Yoichi Asakawa",
+    "Unnamed: 4":"Parental Guidance",
+    "character killer":null,
+    "character.1":"Yoichi Asakawa"
+  },
+  {
+    "description":"Whenever a Survivor within your Terror Radius looks at you, they scream, then you see their Aura for 2s. Cooldown: 80\/70\/60s.\n\"Excellent. Your screams please me.\" -Springtrap",
+    "perk":"Phantom Fear\nKiller - The Animatronic",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Phantom Fear",
+    "character killer":"The Animatronic",
+    "character.1":null
+  },
+  {
+    "description":"Whenever you unlock a Chest, it will contain a rare Med-Kit.\nYou unlock Chests 75\/100\/125% faster.\nThe range at which the Killer hears you unlocking Chests is 12m shorter.",
+    "perk":"Pharmacy",
+    "role":null,
+    "character":"- Quentin Smith",
+    "Unnamed: 4":"Pharmacy",
+    "character killer":null,
+    "character.1":"Quentin Smith"
+  },
+  {
+    "description":"Whenever you stop chasing the Obsession, you earn 1 Token, up to 3.\n\nFor each Token, gain 3\/4\/5% Haste.\n\nWhenever you attack, lose 1 Token.\n\u201cYou've fooled them, haven't you Michael? But not me.\u201d -Dr. Sam Loomis",
+    "perk":"Play With Your Food\nKiller - The Shape",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Play With Your Food",
+    "character killer":"The Shape",
+    "character.1":null
+  },
+  {
+    "description":"While injured, crouched and idle, use Active Ability Button 2 to be downed silently.\nWhile downed this way, once per trial:\nYou make no Grunts of Pain.\nYou leave no Pools of Blood.\nYou recover 25% faster.\nYou can fully recover.\n\nWhenever you recover this way:\nYou gain 50% Haste for 2\/3\/4s.\nYou are healed instantly.\n\nWhen all Generators are completed, you can use this ability once again.\n\u201cI think you'll find this shooting location\u2026 captivating.\u201d \u2013Pauline Stamper",
+    "perk":"Plot Twist",
+    "role":null,
+    "character":"- Nicolas Cage",
+    "Unnamed: 4":"Plot Twist",
+    "character killer":null,
+    "character.1":"Nicolas Cage"
+  },
+  {
+    "description":"Within 32\/48\/64m of locked Chests and dropped items, you see their Auras.\n\nWhenever you unlock a Chest, you are 50% more likely to find an item of higher rarity.\n\"The pioneers used to loot these babies for hours.\" -Lost Tapes: Aizeyu",
+    "perk":"Plunderer's Instinct",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Plunderer's Instinct",
+    "character killer":null,
+    "character.1":null
+  },
+  {
+    "description":"The first time you start repairing each Generator, you see the Killer's Aura for 8s.\n\nWhenever a Generator is completed, you leave no Scratch Marks for 20\/25\/30s.\n\u201cOk, stay calm. Don't overthink it and just keep moving forward: you got this.\u201d -Jane Romero",
+    "perk":"Poised",
+    "role":null,
+    "character":"- Jane Romero",
+    "Unnamed: 4":"Poised",
+    "character killer":null,
+    "character.1":"Jane Romero"
+  },
+  {
+    "description":"Whenever you hook a Survivor, for the next 35\/40\/45s, when you damage a Generator, it explodes and loses 15% more progress.",
+    "perk":"Pop Goes the Weasel\nKiller - The Clown",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Pop Goes the Weasel",
+    "character killer":"The Clown",
+    "character.1":null
+  },
+  {
+    "description":"While repairing, use Active Ability Button 2 to earn Tokens instead of progress, up to 10\/15\/20 Tokens.\nWhile you have at least 1 Token, Active Ability Button 2 to spend all Tokens and gain 1% progress for each Token spent.\nWhenever you take damage, lose all Tokens.\n\"When you look a layer deeper, you realize\u2026 everything is connected.\" - Vittorio Toscano",
+    "perk":"Potential Energy",
+    "role":null,
+    "character":"- Vittorio Toscano",
+    "Unnamed: 4":"Potential Energy",
+    "character killer":null,
+    "character.1":"Vittorio Toscano"
+  },
+  {
+    "description":"While carried by the Killer, while you have at least 25\/20\/15% wiggle and next to an Upright Pallet, you can drop it to stun the Killer.\nWhile downed, you see the Auras of Upright Pallets.\n\u201cI relied on others to protect me once and I lost everything. Never again.\u201d -\u00c9lodie Rakoto",
+    "perk":"Power Struggle",
+    "role":null,
+    "character":"- Elodie Rakoto",
+    "Unnamed: 4":"Power Struggle",
+    "character killer":null,
+    "character.1":"Elodie Rakoto"
+  },
+  {
+    "description":"When you stop chasing a Survivor, you see their Aura for 4s. Cooldown: 60\/50\/40s.\n\"Never stop moving and hope you're always two steps ahead of the beast.\" -Notebook",
+    "perk":"Predator\nKiller - The Wraith",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Predator",
+    "character killer":"The Wraith",
+    "character.1":null
+  },
+  {
+    "description":"While the Killer is within 36m of you and inside a 45 degree cone, whenever you look at them, you hear a sound cue. Cooldown: 60\/45\/30s.\n\"I have a bad feeling about this!\"",
+    "perk":"Premonition",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Premonition",
+    "character killer":null,
+    "character.1":null
+  },
+  {
+    "description":"For each other Survivor within 4m of you, all Survivors repair 6\/8\/10% faster.\n\"Show me what you can do!\" -Dwight",
+    "perk":"Prove Thyself",
+    "role":null,
+    "character":"- Dwight Fairfield",
+    "Unnamed: 4":"Prove Thyself",
+    "character killer":null,
+    "character.1":"Dwight Fairfield"
+  },
+  {
+    "description":"You hide in Lockers and vault silently. The Killer is not alerted. Cooldown: 25\/20\/15s.",
+    "perk":"Quick & Quiet",
+    "role":null,
+    "character":"- Meg Thomas",
+    "Unnamed: 4":"Quick & Quiet",
+    "character killer":null,
+    "character.1":"Meg Thomas"
+  },
+  {
+    "description":"While chased by the Killer:\nYou see the Auras of other Survivors.\nOther Survivors repair 3\/4\/5% faster.\n\nWhenever you take damage, cooldown: 40s.\n\"We need not resort to violence. And I shall prove it.\" - Vittorio Toscano",
+    "perk":"Quick Gambit",
+    "role":null,
+    "character":"- Vittorio Toscano",
+    "Unnamed: 4":"Quick Gambit",
+    "character killer":null,
+    "character.1":"Vittorio Toscano"
+  },
+  {
+    "description":"Whenever you basic-break a Pallet or Breakable Wall, you earn 1 Token, up to 13.\nWhenever you are blinded or Pallet-stunned, for the next 13s you gain 1% Haste for each Token. Cooldown: 30\/25\/20.\n\u201cSigns of a pursuit led deep into the woods where the victim's body was found.\u201d -Port Henly Herald",
+    "perk":"Rampage\nKiller - The Slasher",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Rampage",
+    "character killer":"The Slasher",
+    "character.1":null
+  },
+  {
+    "description":"Whenever a Generator is completed:\nYou are alerted to the position of all Survivors for 3s.\nThe Obsession sees your Aura for 5\/4\/3s.\n\nWhen all Generators are completed:\nThe Obsession gains Exposed.\nYou can Kill the Obsession.",
+    "perk":"Rancor\nKiller - The Spirit",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Rancor",
+    "character killer":"The Spirit",
+    "character.1":null
+  },
+  {
+    "description":"Whenever you damage a Survivor with a basic-attack, you gain 5% Haste for 8\/9\/10s.\nWhile chasing a Survivor, you cannot gain Bloodlust.\n\u201cCatch it, put it in the airlock, get rid of it.\u201d \u2013Dallas",
+    "perk":"Rapid Brutality\nKiller - The Xenomorph",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Rapid Brutality",
+    "character killer":"The Xenomorph",
+    "character.1":null
+  },
+  {
+    "description":"Whenever you fast-exit a Locker, you gain Exhausted for 30\/25\/20s.\nWhenever you gain Exhausted, you see the Killer's Aura for 2s.\n\"All right. You got this. 3... 2... 1... go!\" -Orela Rose",
+    "perk":"Rapid Response",
+    "role":null,
+    "character":"- Orela Rose",
+    "Unnamed: 4":"Rapid Response",
+    "character killer":null,
+    "character.1":"Orela Rose"
+  },
+  {
+    "description":"The first time you hook each Survivor, you earn 1 Token.\nWhen you have 4 Tokens, all Survivors:\nScream.\nGain Exposed for 40\/50\/60s.\n\n\u201cWeeping Ginevra's blood streams\/The devil smells the weak.\u201d -Fabbro Barone's Ginevra",
+    "perk":"Ravenous\nKiller - The Krasue",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Ravenous",
+    "character killer":"The Krasue",
+    "character.1":null
+  },
+  {
+    "description":"While injured, whenever another Survivor within 32m of you takes damage, you gain 40\/45\/50% missing healing progress.",
+    "perk":"Reactive Healing",
+    "role":null,
+    "character":"- Ada Wong",
+    "Unnamed: 4":"Reactive Healing",
+    "character killer":null,
+    "character.1":"Ada Wong"
+  },
+  {
+    "description":"Once per Hook State, while within 6m of a hooked Survivor, use Active Ability Button 2 to stop the sacrifice progress for 20\/25\/30s.",
+    "perk":"Reassurance",
+    "role":null,
+    "character":"- Rebecca Chambers",
+    "Unnamed: 4":"Reassurance",
+    "character killer":null,
+    "character.1":"Rebecca Chambers"
+  },
+  {
+    "description":"After you repair a Generator for at least 1s, you see its Aura.\nWhen you hide in a Locker, the Killer is alerted to the Generator. Cooldown: 25\/20\/15s.\n\"The news edits out what is burdensome and complex, which is the truth.\" -Zarina Kassir",
+    "perk":"Red Herring",
+    "role":null,
+    "character":"- Zarina Kassir",
+    "Unnamed: 4":"Red Herring",
+    "character killer":null,
+    "character.1":"Zarina Kassir"
+  },
+  {
+    "description":"Whenever the Obsession takes damage, you earn 1 Token, up to 3\/4\/5.\n\nFor each Token, Survivors who are not the Obsession open Exit Gates 30% slower.\n\u201cYou don't remember? You must. You're my number one, and you'll never wake up again.\u201d - Freddy Krueger",
+    "perk":"Remember Me\nKiller - The Nightmare",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Remember Me",
+    "character killer":"The Nightmare",
+    "character.1":null
+  },
+  {
+    "description":"After repairing Generators for 55\/50\/45s, while repairing a Generator alone, use Active Ability Button 1 to block that generator for 30s.",
+    "perk":"Repressed Alliance",
+    "role":null,
+    "character":"- Cheryl Mason",
+    "Unnamed: 4":"Repressed Alliance",
+    "character killer":null,
+    "character.1":"Cheryl Mason"
+  },
+  {
+    "description":"Whenever you blind the Killer, they gain Blindness for 20\/25\/30s.\nYou can rummage Chests 1 time. The first time you rummage a Chest, it will contain an uncommon Flashlight.\n\"I'll never see what Haddie sees. But so long as I'm with her, I know I'm safe.\" -Jordan Rois, Ravages of the Abyss Episode 5",
+    "perk":"Residual Manifest",
+    "role":null,
+    "character":"- Haddie Kaur",
+    "Unnamed: 4":"Residual Manifest",
+    "character killer":null,
+    "character.1":"Haddie Kaur"
+  },
+  {
+    "description":"While injured:\nYou bless and cleanse Totems 3\/6\/9% faster.\nYou heal 3\/6\/9% faster.\nYou open Exit Gates 3\/6\/9% faster.\nYou repair 3\/6\/9% faster.\nYou sabotage Hooks 3\/6\/9% faster.\nYou unhook Survivors 3\/6\/9% faster.\nYou unlock chests 3\/6\/9% faster.\nYou vault 3\/6\/9% faster.\n\n\"Focus, even in these desperate times.\"",
+    "perk":"Resilience",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Resilience",
+    "character killer":null,
+    "character.1":null
+  },
+  {
+    "description":"Whenever you are unhooked, you gain 50\/60\/70% healing progress.\n\"It's my turn, bitch.\" -Jill Valentine",
+    "perk":"Resurgence",
+    "role":null,
+    "character":"- Jill Valentine",
+    "Unnamed: 4":"Resurgence",
+    "character killer":null,
+    "character.1":"Jill Valentine"
+  },
+  {
+    "description":"While injured, not Broken and repairing a Generator:\nWhenever you hit a basic great Skill Check, you earn 1 Token.\nWhenever you miss a basic Skill Check, you lose 1 token.\n\nWhen you have 6\/5\/4 Tokens, spend all Tokens to heal 100% faster until you stop healing.\n\u201cRemind me to teach you how to patch your own pedals, Krit.\u201d -Vee Boonyasak",
+    "perk":"Road Life",
+    "role":null,
+    "character":"- Vee Boonyasak",
+    "Unnamed: 4":"Road Life",
+    "character killer":null,
+    "character.1":"Vee Boonyasak"
+  },
+  {
+    "description":"After you hit 5\/4\/3 basic repair Skill Checks, while a Generator is regressing, you see its Aura.\n\"I'll stop this, lieutenant. I promise.\" -Leon S. Kennedy",
+    "perk":"Rookie Spirit",
+    "role":null,
+    "character":"- Leon S. Kennedy",
+    "Unnamed: 4":"Rookie Spirit",
+    "character killer":null,
+    "character.1":"Leon S. Kennedy"
+  },
+  {
+    "description":"Within 56m of where another Survivor was picked-up by the Killer and is being carried, you see the Auras of Hooks and Scourge Hooks.\nYou can sabotage Hooks. Cooldown: 70\/65\/60s.",
+    "perk":"Saboteur",
+    "role":null,
+    "character":"- Jake Park",
+    "Unnamed: 4":"Saboteur",
+    "character killer":null,
+    "character.1":"Jake Park"
+  },
+  {
+    "description":"Whenever you damage a Survivor who is not the Obsession with a basic-attack, you earn 1 Token, up to 6\/7\/8.\nFor each Token, your basic-attack cooldown are 4% shorter.\nWhenever the Obsession takes damage, lose 2 Tokens.\nWhile the Obsession is dead, you cannot earn Tokens.\n\"Death has come to your little town, sheriff.\" -Dr. Sam Loomis",
+    "perk":"Save the best for last\nKiller - The Shape",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Save the best for last",
+    "character killer":"The Shape",
+    "character.1":null
+  },
+  {
+    "description":"While repairing and while your Toolbox is empty, whenever you hit a great basic Skill Check, you earn 1 Token.\nWhen you have 5 Tokens, spend them all:\nYour Toolbox is recharged instantly.\nYou repair 50% slower for 40\/35\/30s.\n\nYou can rummage Chests 1 time. The first time you rummage a Chest, it will contain an uncommon Toolbox.\n\u201cIt's amazing what people will throw away around here.\u201d \u2013Gabriel Soma",
+    "perk":"Scavenger",
+    "role":null,
+    "character":"- Gabriel Soma",
+    "Unnamed: 4":"Scavenger",
+    "character killer":null,
+    "character.1":"Gabriel Soma"
+  },
+  {
+    "description":"While you are within the Killer's Terror Radius, whenever you look at them:\nScream, then see the Killer's Aura for 4\/5\/6s.\nThere is a 50% chance you will scream again.If you do, you see the Killer's Aura for 2s more.\n\nCooldown: 40s.\n\u201cThis is not in the script!\u201d \u2013Nicolas Cage",
+    "perk":"Scene Partner",
+    "role":null,
+    "character":"- Nicolas Cage",
+    "Unnamed: 4":"Scene Partner",
+    "character killer":null,
+    "character.1":"Nicolas Cage"
+  },
+  {
+    "description":"When the trial starts, 4 random Hooks become Scourge Hooks.\nWhenever a Survivor is unhooked from a Scourge Hook, you see the Auras of other Survivors for 5\/6\/7s.",
+    "perk":"Scourge Hook: Floods of Rage\nKiller - The Onry\u014d",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Scourge Hook: Floods of Rage",
+    "character killer":"The Onry\u014d",
+    "character.1":null
+  },
+  {
+    "description":"When the trial starts, 4 random Hooks become Scourge Hooks.\nWhenever a Survivor is unhooked from a Scourge Hook:\nThey gain Hemorrhage for 90s.\nThey gain Mangled for 90s.\nWhen they are healed, until they take damage, they heal and repair 10\/13\/16% slower.\n\n\"We'll tear your soul apart.\" -Pinhead",
+    "perk":"Scourge Hook: Gift of Pain\nKiller - The Cenobite",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Scourge Hook: Gift of Pain",
+    "character killer":"The Cenobite",
+    "character.1":null
+  },
+  {
+    "description":"When the trial starts, 4 random Hooks become Scourge Hooks.\nWhile carrying a Survivor, you see the Auras of Survivors within 12\/14\/16m of Scourge Hooks.\nWhenever a Survivor starts sabotaging a Hook, you are alerted.\n\"No excuses, no equivocations\u2026 No crying.\" -Amanda Young",
+    "perk":"Scourge Hook: Hangman's Trick\nKiller - The Pig",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Scourge Hook: Hangman's Trick",
+    "character killer":"The Pig",
+    "character.1":null
+  },
+  {
+    "description":"When the trial starts, 4 random Hooks become Scourge Hooks.\nWhenever a Survivor is unhooked, the Hook becomes a Scourge Hook.\nWhenever you hook a Survivor on a Scourge Hook, for 6\/8\/10s, you see the Aura of the Generator with the most progress.\n\"Drop anchor! I will chart us a new course.\" -Portia Maye",
+    "perk":"Scourge Hook: Jagged Compass\nKiller - The Houndmaster",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Scourge Hook: Jagged Compass",
+    "character killer":"The Houndmaster",
+    "character.1":null
+  },
+  {
+    "description":"When the trial starts:\n4 random Hooks become Scourge Hooks.\nThe Basement Hooks become Scourge Hooks.\n\nWhile you are at least 24m away from a Survivor on a Scourge Hook, they are sacrificed 10\/15\/20% faster.\n\"Then you will know that there is no escape. When hanging in the depths, you face the dark one.\"",
+    "perk":"Scourge Hook: Monstrous Shrine\nKiller",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Scourge Hook: Monstrous Shrine",
+    "character killer":null,
+    "character.1":null
+  },
+  {
+    "description":"When the trial starts:\n4 random Hooks become Scourge Hooks.\nYou earn 4 Tokens.\n\nThe first time each Survivor is hooked on a Scourge Hook, spend 1 Token, then the Generator with the most progress:\nExplodes, loses 10\/15\/20% progress and starts regressing.\nSurvivors repairing it scream.\n\n\"The pain spills beyond flesh\/darkness staining the horizon.\" -Girl in the Shadow by Carmina Mora",
+    "perk":"Scourge Hook: Pain Resonance\nKiller - The Artist",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Scourge Hook: Pain Resonance",
+    "character killer":"The Artist",
+    "character.1":null
+  },
+  {
+    "description":"After you heal 1 Survivor, while not Broken, when you are unhooked, you gain Broken.\nAfter 28\/24\/20s, if you are not downed, you are instantly healed.\n\"Yeah, that's a no.\" -Steve Harrington",
+    "perk":"Second Wind",
+    "role":null,
+    "character":"- Steve Harrington",
+    "Unnamed: 4":"Second Wind",
+    "character killer":null,
+    "character.1":"Steve Harrington"
+  },
+  {
+    "description":"Whenever a totem is blessed or cleansed, a random unblocked Generator is blocked for 20\/25\/30s.\nWhenever 1 or more Generators are blocked, you gain Undetectable for 30s.\n\u201cYou are a prisoner here, just like me.\u201d -Henry Creel",
+    "perk":"Secret Project\nKiller - The First",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Secret Project",
+    "character killer":"The First",
+    "character.1":null
+  },
+  {
+    "description":"You can heal yourself at 25\/30\/35% speed.",
+    "perk":"Self-Care",
+    "role":null,
+    "character":"- Claudette Morel",
+    "Unnamed: 4":"Self-Care",
+    "character killer":"Care",
+    "character.1":"Claudette Morel"
+  },
+  {
+    "description":"Whenever another Survivor is hooked, you gain Elusive for 20\/25\/30s.\n\"Something I learned in the industry: when the axe is swinging, keep your head down.\" -Yun-jin",
+    "perk":"Self-Preservation",
+    "role":null,
+    "character":"- Lee Yun-Jin",
+    "Unnamed: 4":"Self-Preservation",
+    "character killer":"Preservation",
+    "character.1":"Lee Yun-Jin"
+  },
+  {
+    "description":"While a Survivor within your Terror Radius is healing:\nThey gain Blindness.\nThey gain Exhausted.\n\nWhen they stop healing, this ends after 20\/25\/30s.\n\"Do not admit to fear, or pain, or doubt. These are the seeds from which darkness grows.\" \u2013Otto Stamper",
+    "perk":"Septic Touch\nKiller - The Dredge",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Septic Touch",
+    "character killer":"The Dredge",
+    "character.1":null
+  },
+  {
+    "description":"Whenever you are blinded, gain 6\/8\/10% Haste for 10s.\n\"Shining in the darkest dark, his eyes pierce the night and sting your soul.\"",
+    "perk":"Shadowborn\nKiller - The Wraith",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Shadowborn",
+    "character killer":"The Wraith",
+    "character.1":null
+  },
+  {
+    "description":"Whenever you snuff a Boon Totem:\nYou see the Auras of all Survivors within its range for 6\/7\/8s.\nIt is destroyed.\n\n\"Nothing is permanent here. Nothing except our endless perdition.\" -Unknown, Notebook",
+    "perk":"Shattered Hope\nKiller",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Shattered Hope",
+    "character killer":null,
+    "character.1":null
+  },
+  {
+    "description":"Once per trial, while you do not have 2 Hook States and are next to a hooked Survivor, use Active Ability Button 2 to unhook them:\nThey lose 1 Hook State.\nYou gain 1 Hook State.\nYou scream.\nYou gain Exposed for 60\/50\/40s.\n\n\"It's not your time yet. Now go on!\" -Taurie Cain",
+    "perk":"Shoulder the Burden",
+    "role":null,
+    "character":"- Taurie Cain",
+    "Unnamed: 4":"Shoulder the Burden",
+    "character killer":null,
+    "character.1":"Taurie Cain"
+  },
+  {
+    "description":"Whenever you hook a Survivor, you gain Undetectable for 11\/12\/13s.\nWhen all Generators are completed, you gain Undetectable.\n\u201cDid you see him or not? I can't put out an APB for a bad feeling.\u201d -Sgt. Reyes, Greenville Police",
+    "perk":"Silent Shadow\nKiller - The Slasher",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Silent Shadow",
+    "character killer":"The Slasher",
+    "character.1":null
+  },
+  {
+    "description":"You can attempt to unhook yourself up to 3 times and have 2\/3\/4% more chance to succeed.",
+    "perk":"Slippery Meat",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Slippery Meat",
+    "character killer":null,
+    "character.1":null
+  },
+  {
+    "description":"Whenever you damage a Survivor with a basic-attack:\nThey gain Hemorrhage for 70\/80\/90s.\nThey gain Mangled for 70\/80\/90s.\n\nSurvivors with Hemorrhage lose healing progress 25% faster.\n\"It's in its sadistic nature. There is no swift kill as it delights in the obscene spectacle of our agonizing suffering.\"",
+    "perk":"Sloppy Butcher\nKiller",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Sloppy Butcher",
+    "character killer":null,
+    "character.1":null
+  },
+  {
+    "description":"Within 8\/10\/12m of you, whenever you look at a Totem in a 45 degree cone, you hear a sound cue. Cooldown: 14\/12\/10s.\nWhenever a Survivor cleanses a Totem, you earn 1 Token, up to 5.\nFor each Token, the cone is 5 degrees smaller.\n\"Nope.\" -Lost Tapes: Andy",
+    "perk":"Small Game",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Small Game",
+    "character killer":null,
+    "character.1":null
+  },
+  {
+    "description":"Whenever you Pallet-stun the Killer:\nYou gain 50% Haste for 4s.\nYou gain Exhausted for 30\/25\/20s.\n\n\"I've dealt with psychopaths in suits. You're just uglier and worse dressed.\" -Yun-jin",
+    "perk":"Smash Hit",
+    "role":null,
+    "character":"- Lee Yun-Jin",
+    "Unnamed: 4":"Smash Hit",
+    "character killer":null,
+    "character.1":"Lee Yun-Jin"
+  },
+  {
+    "description":"Whenever a Survivor dies, you earn 1 Token.\nFor each Token, within 20\/22\/24m, the Killer cannot see your Aura.\nWhen all other Survivors are dead:\nYou repair 75% faster.\nYou open Exit Gates and the Hatch 50% faster.\n\nWhen the trial starts, you are more likely to be the Obsession.\n\u201cIt was the boogeyman.\u201d -Laurie Strode",
+    "perk":"Sole",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Sole",
+    "character killer":null,
+    "character.1":null
+  },
+  {
+    "description":"While injured and healing another Survivor without a Med-Kit, you also gain healing progress at 50\/60\/70% speed.\n\u201cShowing up when things get rough and supporting those in need; that's how you become stronger, that's how you grow.\u201d \u2013Jane Romero",
+    "perk":"Solidarity",
+    "role":null,
+    "character":"- Jane Romero",
+    "Unnamed: 4":"Solidarity",
+    "character killer":null,
+    "character.1":"Jane Romero"
+  },
+  {
+    "description":"While hexed, you can fully recover.\nWhenever you fully recover, you gain Endurance for 4\/6\/8s. Cooldown: 30s.",
+    "perk":"Soul Guard",
+    "role":null,
+    "character":"- Cheryl Mason",
+    "Unnamed: 4":"Soul Guard",
+    "character killer":null,
+    "character.1":"Cheryl Mason"
+  },
+  {
+    "description":"Whenever you rummage or unlock a Chest, you earn 1 Token, up to 6.\nWhile repairing a Generator, whenever you hit a great basic Skill Check, spend all Tokens. For each Token spent, the Generator gains 2\/3\/4% permanent progress.\n\"Well, then. Doesn't this feel familiar?\" -Lara Croft",
+    "perk":"Specialist",
+    "role":null,
+    "character":"- Lara Croft",
+    "Unnamed: 4":"Specialist",
+    "character killer":null,
+    "character.1":"Lara Croft"
+  },
+  {
+    "description":"Whenever a Survivor scares a Crow within 20\/28\/36m of you, you are alerted. Cooldown: 5s.\n\"In the shadows they torment, scarring our minds with each scream.\"",
+    "perk":"Spies from the Shadows\nKiller",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Spies from the Shadows",
+    "character killer":null,
+    "character.1":null
+  },
+  {
+    "description":"Within 36m, whenever the Killer looks at you, you hear a sound cue.\nWithin 36m, while the Killer is looking at you:\nYou bless and cleanse Totems 2\/4\/6% faster.\nYou heal 2\/4\/6% faster.\nYou open Exit Gates 2\/4\/6% faster.\nYou repair Generators 2\/4\/6% faster.\nYou sabotage Hooks 2\/4\/6% faster.\nYou unhook Survivors 2\/4\/6% faster.\nYou unlock Chests 2\/4\/6% faster.",
+    "perk":"Spine Chill",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Spine Chill",
+    "character killer":null,
+    "character.1":null
+  },
+  {
+    "description":"After you break 4\/3\/2 Pallets, when you are Pallet-stunned, the Pallet is destroyed.\n\u201cFury is her blood.\u201d",
+    "perk":"Spirit Fury\nKiller - The Spirit",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Spirit Fury",
+    "character killer":"The Spirit",
+    "character.1":null
+  },
+  {
+    "description":"Whenever you start running:\nYou gain 50% Haste for 3s.\nYou gain Exhausted for 60\/50\/40s.",
+    "perk":"Sprint Burst",
+    "role":null,
+    "character":"- Meg Thomas",
+    "Unnamed: 4":"Sprint Burst",
+    "character killer":null,
+    "character.1":"Meg Thomas"
+  },
+  {
+    "description":"After hiding for 15s within the Killer's Terror Radius, you earn 1 Token, up to 2\/3\/4.\nWhenever you hit a good basic Skill Check, spend 1 Token:\nThe good Skill Check becomes a great Skill Check.\nYou gain 1% more progress.\n\n\"I had you, I had you on your knees. You're runnin' scared because we had you. We're gonna close this case!\" -Detective David Tapp",
+    "perk":"Stake Out",
+    "role":null,
+    "character":"- Detective Tapp",
+    "Unnamed: 4":"Stake Out",
+    "character killer":null,
+    "character.1":"Detective Tapp"
+  },
+  {
+    "description":"While carrying a Survivor, Survivors within your Terror Radius gain Exposed. This ends 26\/28\/30s after:\nThey leave your Terror Radius.\nYou drop or hook the carried Survivor.\n\nCooldown: 60s.\n\"Enjoy this moment, few get so close.\" -Hak Ji-woon",
+    "perk":"Starstruck\nKiller - The Trickster",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Starstruck",
+    "character killer":"The Trickster",
+    "character.1":null
+  },
+  {
+    "description":"After being idle for 4\/3\/2s, within 24m, until you start moving:\nYou see the Killer's Aura.\nYou see the Auras of Chests.\nYou see the Auras of Generators.\n\n\"Breathe in. Breathe out. Now open your eyes.\" -Baermar",
+    "perk":"Still Sight",
+    "role":null,
+    "character":"- Aestri Yazar",
+    "Unnamed: 4":"Still Sight",
+    "character killer":null,
+    "character.1":"Aestri Yazar"
+  },
+  {
+    "description":"The first time you deplete an Item's Charges, you see the Killer's Aura for 8s.\nWhenever you loot an item from a Chest, it has 60\/70\/80% more Charges.\n\"You're doing it wrong! Let me show you how it's done.\" - Nea",
+    "perk":"Streetwise",
+    "role":null,
+    "character":"- Nea Karlsson",
+    "Unnamed: 4":"Streetwise",
+    "character killer":null,
+    "character.1":"Nea Karlsson"
+  },
+  {
+    "description":"While in the Basement:\nYou can heal yourself, but 30% slower.\nWhenever you finish healing, you see the Killer's Aura for 6\/8\/10s.\n\n\"I'm getting out of here, if it's the last thing I do.\u201d -Sable",
+    "perk":"Strength in Shadows",
+    "role":null,
+    "character":"- Sable Ward",
+    "Unnamed: 4":"Strength in Shadows",
+    "character killer":null,
+    "character.1":"Sable Ward"
+  },
+  {
+    "description":"Survivors' breathing noises are 15\/20\/25% louder and their Grunts of Pain are 30\/40\/50% louder.\n\u201cIf you don't stop and catch your breath\u2026 she will.\u201d",
+    "perk":"Stridor\nKiller - The Nurse",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Stridor",
+    "character killer":"The Nurse",
+    "character.1":null
+  },
+  {
+    "description":"Whenever a Survivor fast-vaults within 12m of you, the next time you basic-vault a window, it is 30\/35\/40% faster. Cooldown: 25s.",
+    "perk":"Superior Anatomy\nKiller - The Mastermind",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Superior Anatomy",
+    "character killer":"The Mastermind",
+    "character.1":null
+  },
+  {
+    "description":"Whenever you down a Survivor with a basic-attack, Generators within 32m:\nExplode, lose 6\/7\/8% progress and start regressing.\nSurvivor repairing them scream.\n\n\u201cThe creature appears to have some unknown influence over electricity and nearby electronics.\u201d -Hawkins National Laboratory",
+    "perk":"Surge\nKiller - The Demogorgon",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Surge",
+    "character killer":"The Demogorgon",
+    "character.1":null
+  },
+  {
+    "description":"You see the Auras of regressing Generators.\nWhenever a Generator stops regressing, you see its Aura for 8\/12\/16s.\nGenerator repair noises can be heard from 8m farther away.\n\"Are you gonna behave?\" -Amanda Young",
+    "perk":"Surveillance\nKiller - The Pig",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Surveillance",
+    "character killer":"The Pig",
+    "character.1":null
+  },
+  {
+    "description":"Whenever another Survivor finishes healing you, while within 8\/12\/16m of each other, you both leave no Scratch Marks. When either of you leaves the range, this ends after 4s.\n\u201cI'm good, I'm good\u2026 but keep it down.\u201d \u2013Renato Lyra",
+    "perk":"Teamwork: Collective Stealth",
+    "role":null,
+    "character":"- Renato Lyra",
+    "Unnamed: 4":"Teamwork: Collective Stealth",
+    "character killer":null,
+    "character.1":"Renato Lyra"
+  },
+  {
+    "description":"For each other Survivor repairing a Generator with you, good basic Skill Check zones are 15\/20\/25% bigger.\nWhile repairing with at least 1 other Survivor, you repair 5% faster.\n\u201cHow many times do I have to be right on the money before you guys just trust me?\u201d \u2014Dustin Henderson",
+    "perk":"Teamwork: Full Circuit",
+    "role":null,
+    "character":"- Dustin Henderson",
+    "Unnamed: 4":"Teamwork: Full Circuit",
+    "character killer":null,
+    "character.1":"Dustin Henderson"
+  },
+  {
+    "description":"Whenever you finish healing another Survivor, while you stay within 8\/12\/16m of each other, you both gain 5% Haste. When either of you leaves the range, this ends after 4s.\n\u201cYou good? Then keep up.\u201d \u2013Thalita Lyra",
+    "perk":"Teamwork: Power of Two",
+    "role":null,
+    "character":"- Thalita Lyra",
+    "Unnamed: 4":"Teamwork: Power of Two",
+    "character killer":null,
+    "character.1":"Thalita Lyra"
+  },
+  {
+    "description":"For each other Survivor repairing a Generator with you, the range of Generator repair noises is 15\/20\/25% smaller.\nWhile repairing with at least 1 other Survivor, you repair 5% faster.\n\"I make my own rules.\" \u2014Eleven",
+    "perk":"Teamwork: Soft-Spoken",
+    "role":null,
+    "character":"- Eleven",
+    "Unnamed: 4":"Teamwork: Soft-Spoken",
+    "character killer":"Spoken",
+    "character.1":"Eleven"
+  },
+  {
+    "description":"Whenever you blind or Pallet-stun the Killer, for 6\/8\/10s, other injured Survivors within 24m:\nGain Endurance.\nSee the Killer's Aura.\n\n\"Facing evil brings good people together.\" -Michonne Grimes",
+    "perk":"Teamwork: Throw Down",
+    "role":null,
+    "character":"- Michonne Grimes",
+    "Unnamed: 4":"Teamwork: Throw Down",
+    "character killer":null,
+    "character.1":"Michonne Grimes"
+  },
+  {
+    "description":"While injured, whenever another Survivor within 24m of you blinds or Pallet-stuns the Killer, for 20\/25\/30s:\nYou make no Grunts of Pain.\nYou leave no Pools of Blood.\nYou leave no Scratch Marks.\n\n\u201cThey're fucking with the wrong people.\u201d -Rick Grimes",
+    "perk":"Teamwork: Toughen Up",
+    "role":null,
+    "character":"- Rick Grimes",
+    "Unnamed: 4":"Teamwork: Toughen Up",
+    "character killer":null,
+    "character.1":"Rick Grimes"
+  },
+  {
+    "description":"While repairing a Generator:\nThe range of Generator repair noises is 8m shorter.\nWhenever you miss a basic Skill Check, the Generator does not explode, but loses 5\/4\/3% more progress.\n\n\u201cI'm gonna stealth this one.\u201d -Feng Min",
+    "perk":"Technician",
+    "role":null,
+    "character":"- Feng Min",
+    "Unnamed: 4":"Technician",
+    "character killer":null,
+    "character.1":"Feng Min"
+  },
+  {
+    "description":"While downed:\nYou gain 30\/40\/50% Haste.\nYou can crawl and recover at the same time.\nYour Grunts of Pain are 75% quieter.\n\n\"What the hell is this? I'm taking this bastard down!\" -Detective David Tapp",
+    "perk":"Tenacity",
+    "role":null,
+    "character":"- Detective Tapp",
+    "Unnamed: 4":"Tenacity",
+    "character killer":null,
+    "character.1":"Detective Tapp"
+  },
+  {
+    "description":"When all Generators are completed: all injured, downed, and hooked Survivors gain Broken.\nWhen an Exit Gate is opened, this ends after 35\/40\/45s.",
+    "perk":"Terminus\nKiller - The Mastermind",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Terminus",
+    "character killer":"The Mastermind",
+    "character.1":null
+  },
+  {
+    "description":"Whenever a Survivor enters the Basement while you are 24m away from it, you see their Aura for 4\/5\/6s. Cooldown: 45s.",
+    "perk":"Territorial Imperative\nKiller - The Huntress",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Territorial Imperative",
+    "character killer":"The Huntress",
+    "character.1":null
+  },
+  {
+    "description":"For each injured, downed, or hooked Survivor, all Survivors:\nCleanse totems 1\/1.5\/2% slower.\nRepair 1\/1.5\/2% slower.\nSabotage Hooks 1\/1.5\/2% slower.\n\nWhile 4 Survivors are either injured, downed or hooked, all above actions are additionally 12% slower.\n\"She plays with us and revels in our pain.\"",
+    "perk":"Thanatophobia\nKiller - The Nurse",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Thanatophobia",
+    "character killer":"The Nurse",
+    "character.1":null
+  },
+  {
+    "description":"While injured, great basic Skill Check zones are 10\/20\/30% bigger.",
+    "perk":"This Is Not Happening",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"This Is Not Happening",
+    "character killer":null,
+    "character.1":null
+  },
+  {
+    "description":"Whenever you pick-up a Survivor, all Generators not being repaired are blocked for 16s. Cooldown: 40\/35\/30s.\n\"The night assists me and it's endless here.\" -The Ghost Face",
+    "perk":"Thrilling Tremors\nKiller - The Ghost Face",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Thrilling Tremors",
+    "character killer":"The Ghost Face",
+    "character.1":null
+  },
+  {
+    "description":"When the trial starts, you earn 3 Tokens, up to 3.\nWhenever you hook a Survivor, you earn 1 Token.\nWhenever you break a Pallet or Breakable Wall, spend 1 Token. Then, all Survivors within 36m scream and you see their Auras for 4\/5\/6s.\n\u201cAll those who stood in her path feared her mighty THWACK!\u201d \u2013Sonhadores Sombrios, Issue #3",
+    "perk":"THWACK!\nKiller - The Skull Merchant",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"THWACK!",
+    "character killer":"The Skull Merchant",
+    "character.1":null
+  },
+  {
+    "description":"The first time each Generator has 70% progress:\nYou gain Undetectable for 12\/14\/16s.\nYou are alerted.\n\n\"The Hillbilly makes impressive tools out of scraps. Tools aimed at maiming us in creative ways...\" -Notebook",
+    "perk":"Tinkerer\nKiller - The Hillbilly",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Tinkerer",
+    "character killer":"The Hillbilly",
+    "character.1":null
+  },
+  {
+    "description":"Whenever you damage a Generator, until it stops regressing:\nYou gain undetectable.\nSurvivors see that Generator's Aura.\n\nCooldown: 60\/45\/30s.",
+    "perk":"Trail of Torment\nKiller - The Executioner",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Trail of Torment",
+    "character killer":"The Executioner",
+    "character.1":null
+  },
+  {
+    "description":"While chased by the Killer:\nYou see the Aura of the Generator with the most progress.\nWhenever you drop a Pallet, you see the Killer's Aura for 4\/5\/6s.\n\nWhen the Killer stops chasing you, this ends after 6\/8\/10s.\n\u201cNothing gets done around here if I don't do it.\u201d \u2013Gabriel Soma",
+    "perk":"Troubleshooter",
+    "role":null,
+    "character":"- Gabriel Soma",
+    "Unnamed: 4":"Troubleshooter",
+    "character killer":null,
+    "character.1":"Gabriel Soma"
+  },
+  {
+    "description":"After hooking a Survivor, for the next 40\/50\/60s, use Active Ability Button 1 to make target Generator you can see within 20m explode, lose 10% progress and start regressing.\n\u201cNothing will happen to you... Nothing that you don't deserve!\u201d -Henry Creel",
+    "perk":"Turn Back The Clock\nKiller - The First",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Turn Back The Clock",
+    "character killer":"The First",
+    "character.1":null
+  },
+  {
+    "description":"Whenever you search a Locker, Survivors within 40m:\nGain Blindness for 30s.\nScream.\n\nCooldown: 55\/50\/45s.\n\u201cI can't lie to you about your chances, but... you have my sympathies.\u201d \u2013Ash",
+    "perk":"Ultimate Weapon\nKiller - The Xenomorph",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Ultimate Weapon",
+    "character killer":"The Xenomorph",
+    "character.1":null
+  },
+  {
+    "description":"Whenever a Survivor takes damage, for the next 24\/27\/30s, whenever you basic-vault a window, gain 7% Haste for 10s.\n\"I heard it. Running. It was getting closer!\u201d - Anonymous Testimony, 09\/09\/1979",
+    "perk":"Unbound\nKiller - The Unknown",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Unbound",
+    "character killer":"The Unknown",
+    "character.1":null
+  },
+  {
+    "description":"Once per trial, while downed by the Killer, you can fully recover.\nWhile downed, you recover 25\/30\/35% faster.\n\"Goddammit, I am seriously FUBAR!\" -Bill",
+    "perk":"Unbreakable",
+    "role":null,
+    "character":"- William \"Bill\" Overbeck",
+    "Unnamed: 4":"Unbreakable",
+    "character killer":null,
+    "character.1":"William \"Bill\" Overbeck"
+  },
+  {
+    "description":"Whenever a Survivor misses a basic Skill Check, earn 3 Tokens, up to 18\/24\/30.\nWhenever you damage a Generator, spend all Tokens. For each Token spent:\nThe Generator loses 1% progress.\nThe Generator is blocked for 1s.\n\nWhen that Generator is unblocked, it begins regressing. Cooldown: 60s.\n\"Erratic behavior in machinery could be related to [REDACTED], further testing required.\u201d - OSS Report, 12\/02\/1943",
+    "perk":"Undone\nKiller - The Unknown",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Undone",
+    "character killer":"The Unknown",
+    "character.1":null
+  },
+  {
+    "description":"Whenever you damage a Generator:\nYour Terror Radius is set to that Generator for 22\/26\/30s and its radius is 32m.\nYou gain Undetectable for that time.\n\nCooldown: 30s.\n\"Mom, if you find this, I'm sorry...\u201d - Final Journal Entry, 07\/12\/1991",
+    "perk":"Unforeseen\nKiller - The Unknown",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Unforeseen",
+    "character killer":"The Unknown",
+    "character.1":null
+  },
+  {
+    "description":"Survivors within your Terror Radius get 10% more basic Skill Checks.\nThe good zone of basic Skill Checks is 40\/50\/60% smaller.\n\"Its presence befalls us.\"",
+    "perk":"Unnerving Presence\nKiller - The Trapper",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Unnerving Presence",
+    "character killer":"The Trapper",
+    "character.1":null
+  },
+  {
+    "description":"Whenever you miss a basic-attack, your cooldown is 20\/25\/30% shorter.",
+    "perk":"Unrelenting\nKiller",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Unrelenting",
+    "character killer":null,
+    "character.1":null
+  },
+  {
+    "description":"For each other Survivor alive, all Survivors are 1\/2\/3% luckier.\nAll Survivors can attempt to unhook themselves.\n\u201cWhat can I say? I'm just a very lucky guy\u2026 I'm sure some of it will rub off on you.\u201d -Ace",
+    "perk":"Up the Ante",
+    "role":null,
+    "character":"- Ace Visconti",
+    "Unnamed: 4":"Up the Ante",
+    "character killer":null,
+    "character.1":"Ace Visconti"
+  },
+  {
+    "description":"While crouched, you gain 90\/95\/100% Haste.\n\"The paint is still fresh but I'm long gone.\" -Nea",
+    "perk":"Urban Evasion",
+    "role":null,
+    "character":"- Nea Karlsson",
+    "Unnamed: 4":"Urban Evasion",
+    "character killer":null,
+    "character.1":"Nea Karlsson"
+  },
+  {
+    "description":"All Survivors within 16m of you:\nLose Blindness 44\/55\/66% faster.\nLose Broken 44\/55\/66% faster.\nLose Exhausted 44\/55\/66% faster.\nLose Exposed 44\/55\/66% faster.\nLose Hemorrhage 44\/55\/66% faster.\nLose Hindered 44\/55\/66% faster.\nLose Mangled 44\/55\/66% faster.\nLose Oblivious 44\/55\/66% faster.\n\nAfter they leave your range, this ends after 15s.\n\"I'm gonna be here when you wake up. You're gonna make it.\" -Quentin Smith",
+    "perk":"Vigil",
+    "role":null,
+    "character":"- Quentin Smith",
+    "Unnamed: 4":"Vigil",
+    "character killer":null,
+    "character.1":"Quentin Smith"
+  },
+  {
+    "description":"Within 32m of you, you see the Auras of Generators.\nWhenever a Generator is completed, cooldown: 20\/18\/16s.",
+    "perk":"Visionary",
+    "role":null,
+    "character":"- Felix Richter",
+    "Unnamed: 4":"Visionary",
+    "character killer":null,
+    "character.1":"Felix Richter"
+  },
+  {
+    "description":"When all Generators are completed:\nYou see the Auras of Exit Gate Switches.\nWhile opening an Exit Gate, other Survivors see your Aura.\nFor each Survivor alive, you open Exit Gates 8\/10\/12.5% faster.",
+    "perk":"Wake Up!",
+    "role":null,
+    "character":"- Quentin Smith",
+    "Unnamed: 4":"Wake Up!",
+    "character killer":null,
+    "character.1":"Quentin Smith"
+  },
+  {
+    "description":"Whenever you start chasing a Survivor, for the next 5s, you see the Auras of all other injured Survivors within 20m. Cooldown: 40\/35\/30s.\n\u201cA drop does not satiate\/when a river is needed.\u201d -Elliot Campbell's Grandeur of Samuel",
+    "perk":"Wandering Eye\nKiller - The Krasue",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Wandering Eye",
+    "character killer":"The Krasue",
+    "character.1":null
+  },
+  {
+    "description":"Whenever the Killer sees your Aura, you earn 1 Token. Cooldown: 10s.\nWhen you have 4 Tokens, spend them all. Then, all Survivors see the Killer's Aura for 10\/12.5\/15s.\n\u201cIt is not me. It is you. You are the monster.\u201d \u2014Eleven",
+    "perk":"We See You",
+    "role":null,
+    "character":"- Eleven",
+    "Unnamed: 4":"We See You",
+    "character killer":null,
+    "character.1":"Eleven"
+  },
+  {
+    "description":"Whenever you unhook a Survivor, for 30\/60\/90s, you heal other Survivors 100% faster.\n\"I'm confident we can all escape in one piece if we help each other.\"",
+    "perk":"We'll make it",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"We'll make it",
+    "character killer":null,
+    "character.1":null
+  },
+  {
+    "description":"You heal downed Survivors 100% faster.\nWhenever you finish healing a downed Survivor, they gain Endurance for 6\/8\/10s. Cooldown: 30s.\n\u201cCome on then, let's \u2018ave it! I don't give a shit pal.\u201d -David King",
+    "perk":"We're Gonna Live Forever",
+    "role":null,
+    "character":"- David King",
+    "Unnamed: 4":"We're Gonna Live Forever",
+    "character killer":null,
+    "character.1":"David King"
+  },
+  {
+    "description":"The first time each item is depleted, it is dropped.\nWhile a Survivor is within 12m of a dropped item:\nYou see their Aura.\nThey see the item's Aura.\n\nWhenever a Survivor picks-up an item, they gain Oblivious for 20\/25\/30s.\n\u201cNo number of novelties will protect you from me!\u201d - Vecna",
+    "perk":"Weave Attunement\nKiller",
+    "role":null,
+    "character":" - The Lich",
+    "Unnamed: 4":"Weave Attunement",
+    "character killer":null,
+    "character.1":"The Lich"
+  },
+  {
+    "description":"While within 48\/40\/32m of a Survivor, you randomly hear whispers.\n\"It's unclear as to the motivations of The Fog, but it is undeniable that it often takes the beast's side.\" -Notebook",
+    "perk":"Whispers\nKiller",
+    "role":null,
+    "character":null,
+    "Unnamed: 4":"Whispers",
+    "character killer":null,
+    "character.1":null
+  },
+  {
+    "description":"While in the Basement, you can unhook yourself.\nWhenever you are unhooked, you see the Killer's Aura for 16\/18\/20s.\n\u201cI haven't let anyone get in my way before. You think I'm gonna start now?\u201d -Sable",
+    "perk":"Wicked",
+    "role":null,
+    "character":"- Sable Ward",
+    "Unnamed: 4":"Wicked",
+    "character killer":null,
+    "character.1":"Sable Ward"
+  },
+  {
+    "description":"Whenever you fast-vault a Pallet:\nYou gain 10\/12.5\/15% Haste for 3s.\nThe Pallet is reset, blocked for 60s, and all Survivors see its Aura for that time.\n\nCooldown: 60s.\n\"Nothing but the open road. Just the way I like it.\" -Shane Wiigwaas",
+    "perk":"Wide Open Throttle",
+    "role":null,
+    "character":"- Shane Wiigwaas",
+    "Unnamed: 4":"Wide Open Throttle",
+    "character killer":null,
+    "character.1":"Shane Wiigwaas"
+  },
+  {
+    "description":"Within 24\/28\/32m of you:\nYou see the Auras of Pallets.\nYou see the Auras of Breakable Walls.\nYou see the Auras of Windows.\n\n\u201cCarve your name\/Value faith an' family, don't complain\/Open your windows of opportunity.\u201d -Kate Denson's Windows of Opportunity",
+    "perk":"Windows of Opportunity",
+    "role":null,
+    "character":"- Kate Denson",
+    "Unnamed: 4":"Windows of Opportunity",
+    "character killer":null,
+    "character.1":"Kate Denson"
+  },
+  {
+    "description":"After repairing 40% of Generators, while next to a Generator, use Active Ability Button 2 to trap it for 100\/110\/120s or until the Killer damages that Generator. All Survivors see that Generator's Aura for that time.\nWhile the Killer is within 14m of that Generator, all Survivors see the Killer's Aura.",
+    "perk":"Wiretap",
+    "role":null,
+    "character":"- Ada Wong",
+    "Unnamed: 4":"Wiretap",
+    "character killer":null,
+    "character.1":"Ada Wong"
+  },
+  {
+    "description":"Within 32m, you see the Auras of Pallets and windows.\nWhenever a Survivor drops a Pallet, you see their Aura for 3\/4\/5s.\n\u201cWithin your enemy's strength is weakness.\u201d -Renjiro's Doctrine 12:5",
+    "perk":"Zanshin Tactics\nKiller - The Oni",
+    "role":null,
+    "character":"- The Oni",
+    "Unnamed: 4":"Zanshin Tactics",
+    "character killer":"The Oni",
+    "character.1":"The Oni"
+  }
+]
