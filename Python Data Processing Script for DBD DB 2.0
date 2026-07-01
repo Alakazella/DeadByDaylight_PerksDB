@@ -1,0 +1,331 @@
+import pandas as pd
+import numpy as np
+import re
+
+def load_raw_data():
+    """
+    Loads data from the exported 'Beta Dead by Daylight PerkDex' CSV file.
+    """
+    try:
+        csv_path = '/content/Dead by Daylight PerkDex - DBD_Perks_Updated.csv'
+        print(f"Attempting to load '{csv_path}'...")
+        return pd.read_csv(csv_path)
+    except FileNotFoundError:
+        print(f"Error: Could not find '{csv_path}'.")
+        print("Please make sure you have uploaded the CSV file to your Google Colab session.")
+        return None
+
+def extract_category(name):
+    if not isinstance(name, str):
+        return 'Standard', ''
+    categories = ['Hex', 'Scourge Hook', 'Boon', 'Invocation', 'Teamwork']
+    for cat in categories:
+        if name.startswith(cat + ":"):
+            return cat, name.replace(cat + ":", "").strip()
+    return 'Standard', name
+
+def safe_eval(x):
+    try:
+        return eval(x) if isinstance(x, str) and x.startswith('[') else []
+    except:
+        return []
+
+def update_values_with_units_and_symbols(row, description_column_name):
+    original_values_list = row['values_by_tier']
+    description = row[description_column_name]
+
+    if not original_values_list or not description:
+        return original_values_list
+
+    primary_unit_for_row = None
+
+    clean_nums_from_values = []
+    for v_entry in original_values_list:
+        num_part = re.sub(r'[^0-9.]', '', str(v_entry)) # Allow for floats
+        if num_part:
+            clean_nums_from_values.append(num_part)
+
+    if clean_nums_from_values:
+        num_pattern = '|'.join(map(re.escape, clean_nums_from_values))
+
+        if re.search(rf'\b(?:{num_pattern})m(?![a-zA-Z])', description, re.IGNORECASE):
+            primary_unit_for_row = 'm'
+        elif re.search(rf'\b(?:{num_pattern})(s|\s*seconds)(?![a-zA-Z])', description, re.IGNORECASE):
+            primary_unit_for_row = 's'
+        elif re.search(rf'\b(?:{num_pattern})%(?![a-zA-Z])', description, re.IGNORECASE):
+            primary_unit_for_row = '%'
+
+    updated_values = []
+    for val_entry in original_values_list:
+        base_num_str = re.sub(r'[^0-9.]', '', str(val_entry))
+
+        if not base_num_str:
+            updated_values.append(str(val_entry))
+            continue
+
+        if primary_unit_for_row:
+            updated_values.append(f"{base_num_str}{primary_unit_for_row}")
+        else:
+            updated_values.append(base_num_str)
+
+    return updated_values
+
+# Define keyword patterns for additional tags
+new_tag_keywords_patterns = {
+    'Cleanse Totems': r'cleanse totems',
+    'Bless Totems': r'bless(?:ing)?(?:\s+\S+){0,5}\s+totem(?:s)?',
+    'Healing': r'healing|heal',
+    'Open Exit Gates': r'open exit gates',
+    'Sabotage Hooks': r'sabotage hooks',
+    'Unhook Survivors': r'unhook survivors',
+    'Unlock Chests': r'unlock chests'
+}
+
+def update_tags_from_description(row, description_column_name):
+    current_tags = row['tags']
+    description = row[description_column_name]
+    perk_category = row['perk_category']
+
+    if not isinstance(description, str):
+        return current_tags
+
+    updated_tags_set = set()
+
+    for tag in current_tags:
+        if tag == 'Heal':
+            updated_tags_set.add('Healing')
+        else:
+            updated_tags_set.add(tag)
+
+    if perk_category == 'Hex':
+        updated_tags_set.add('Hex')
+    elif perk_category == 'Boon':
+        if 'Hex' in updated_tags_set:
+            updated_tags_set.remove('Hex')
+
+    for tag_name, pattern in new_tag_keywords_patterns.items():
+        search_pattern = r'\b(?:' + pattern + r')\b'
+        if re.search(search_pattern, description, re.IGNORECASE):
+            updated_tags_set.add(tag_name)
+
+    return sorted(list(updated_tags_set))
+
+# Define extract_first_number function (from cell 451e18ce)
+def extract_first_number(text, keyword):
+    if not isinstance(text, str):
+        return None
+    match = re.search(rf'(\d+)s? {keyword}', text, re.IGNORECASE)
+    return int(match.group(1)) if match else None
+
+def process_perks_table(raw_df):
+    """Extracts and formats the main Perks table."""
+    required_columns = ['perk', 'role', 'character', 'description_text', 'activation_triggers']
+
+    missing_cols = [col for col in required_columns if col not in raw_df.columns]
+
+    if missing_cols:
+        print(f"\n--- COLUMN ERROR ---")
+        print(f"Missing columns: {missing_cols}")
+        print(f"Columns actually found in your CSV:")
+        for col in raw_df.columns:
+            print(f"  - '{col}'")
+        print("\nPlease update the script's column names to match the ones found in your CSV, or rename the headers in your Google Sheet.")
+        return None
+
+    perks_df = raw_df[required_columns].copy()
+
+    # Rename columns to match SQL schema
+    perks_df.columns = ['PerkName', 'Role', 'CharacterName', 'Description', 'ActivationCondition']
+
+    # Add a mock PerkID (in SQL this is AUTO_INCREMENT, but we need it here to link tables)
+    perks_df['PerkID'] = range(1, len(perks_df) + 1)
+
+    return perks_df
+
+def process_tags_tables(raw_df, perks_df):
+    """Creates the unique Tags table and the PerkTags junction table."""
+    all_tags = set()
+    perk_tag_relationships = []
+
+    for index, row in raw_df.iterrows():
+        perk_id = perks_df.loc[perks_df['PerkName'] == row['perk'], 'PerkID'].iloc[0]
+
+        tag_str_list = row['tags'] # 'tags' column is now a list after safe_eval and update_tags_from_description
+        if isinstance(tag_str_list, list):
+            tags = [tag.strip() for tag in tag_str_list if tag.strip()]
+        else:
+            tags = []
+
+        for tag in tags:
+            all_tags.add(tag)
+            perk_tag_relationships.append({'PerkID': perk_id, 'TagName': tag})
+
+    tags_df = pd.DataFrame({'TagName': list(all_tags)})
+    tags_df['TagID'] = range(1, len(tags_df) + 1)
+
+    perktags_df = pd.DataFrame(perk_tag_relationships)
+    perktags_df = perktags_df.merge(tags_df, on='TagName')[['PerkID', 'TagID']]
+
+    return tags_df, perktags_df
+
+def process_metrics_table(raw_df, perks_df):
+    """Extracts tier values and units into the PerkMetrics relational format."""
+    metrics_data = []
+
+    for index, row in raw_df.iterrows():
+        perk_id = perks_df.loc[perks_df['PerkName'] == row['perk'], 'PerkID'].iloc[0]
+
+        # 1. Handle generic tiered values from 'values_by_tier'
+        if 'values_by_tier' in raw_df.columns and row['values_by_tier']:
+            values_list = row['values_by_tier']
+            metric_unit = 'Variable'
+
+            if len(values_list) > 0 and isinstance(values_list[0], str):
+                match_unit = re.search(r'([a-zA-Z%]+)$', values_list[0])
+                if match_unit:
+                    metric_unit = match_unit.group(1)
+
+            tier_values = [re.sub(r'[^0-9.]', '', str(v)) for v in values_list]
+
+            metrics_data.append({
+                'PerkID': perk_id,
+                'MetricContext': 'Primary Effect',
+                'MetricUnit': metric_unit,
+                'Tier1Value': tier_values[0] if len(tier_values) > 0 else None,
+                'Tier2Value': tier_values[1] if len(tier_values) > 1 else None,
+                'Tier3Value': tier_values[2] if len(tier_values) > 2 else None
+            })
+
+        # 2. Handle cooldowns from 'cooldown_seconds'
+        if 'cooldown_seconds' in raw_df.columns and pd.notna(row['cooldown_seconds']):
+            metrics_data.append({
+                'PerkID': perk_id,
+                'MetricContext': 'Cooldown',
+                'MetricUnit': 'Seconds',
+                'Tier1Value': row['cooldown_seconds'],
+                'Tier2Value': None,
+                'Tier3Value': None
+            })
+
+        # 3. Handle durations from 'duration_seconds'
+        if 'duration_seconds' in raw_df.columns and pd.notna(row['duration_seconds']):
+            metrics_data.append({
+                'PerkID': perk_id,
+                'MetricContext': 'Duration',
+                'MetricUnit': 'Seconds',
+                'Tier1Value': row['duration_seconds'],
+                'Tier2Value': None,
+                'Tier3Value': None
+            })
+
+    metrics_df = pd.DataFrame(metrics_data)
+
+    if len(metrics_df) == 0:
+        metrics_df = pd.DataFrame(columns=['PerkID', 'MetricContext', 'MetricUnit', 'Tier1Value', 'Tier2Value', 'Tier3Value'])
+
+    metrics_df['MetricID'] = range(1, len(metrics_df) + 1)
+
+    return metrics_df[['MetricID', 'PerkID', 'MetricContext', 'MetricUnit', 'Tier1Value', 'Tier2Value', 'Tier3Value']]
+
+# Define trigger_keywords and get_triggers function
+trigger_keywords = {
+    'Hooking': 'hook',
+    'Totem/Hex': 'totem',
+    'Healing': 'heal',
+    'Generators': 'generator',
+    'Vaulting': 'vault',
+    'Injured': 'injured',
+    'Terror Radius': 'terror radius',
+    'End Game': 'exit gate|endgame'
+}
+
+def get_mechanics(text):
+    if not isinstance(text, str):
+        return []
+    mechanic_keywords = {
+        'Aura Reading': 'aura',
+        'Exhaustion': 'exhausted',
+        'Haste': 'haste',
+        'Exposed': 'exposed',
+        'Regression': 'regress',
+        'Healing': 'heal',
+        'Stun': 'stun',
+        'Broken': 'broken',
+        'Mangled': 'mangled',
+        'Blindness': 'blindness',
+        'Oblivious': 'oblivious',
+        'Undetectable': 'undetectable',
+        'Incapacitated': 'incapacitated'
+    }
+    found = []
+    for label, keyword in mechanic_keywords.items():
+        if re.search(keyword, text, re.IGNORECASE):
+            found.append(label)
+    return list(set(found))
+
+def get_triggers(text):
+    if not isinstance(text, str):
+        return ['Passive']
+    found = []
+    for label, keyword in trigger_keywords.items():
+        if re.search(keyword, text, re.IGNORECASE):
+            found.append(label)
+    return found if found else ['Passive']
+
+def main():
+    print("Loading raw data from 'Beta Dead by Daylight PerkDex'...")
+    raw_data = load_raw_data()
+
+    if raw_data is None:
+        print("\nStopping execution: No data file was loaded.")
+        return
+
+    # Apply initial data transformations
+    raw_data[['perk_category', 'perk_clean']] = raw_data['perk'].apply(lambda x: pd.Series(extract_category(x)))
+
+    # Apply safe_eval to list-like columns that might be strings
+    for col in ['tags', 'values_by_tier']:
+        if col in raw_data.columns:
+            raw_data[col] = raw_data[col].apply(safe_eval)
+
+    # Rename 'effects' column to 'description_text' for consistency if it exists
+    if 'effects' in raw_data.columns:
+        raw_data = raw_data.rename(columns={'effects': 'description_text'})
+
+    description_col = 'description_text'
+
+    # Apply functions to create derived columns
+    raw_data['mechanic_tags'] = raw_data[description_col].apply(get_mechanics)
+    raw_data['activation_triggers'] = raw_data[description_col].apply(get_triggers)
+    raw_data['values_by_tier'] = raw_data.apply(update_values_with_units_and_symbols, args=(description_col,), axis=1)
+    raw_data['tags'] = raw_data.apply(update_tags_from_description, args=(description_col,), axis=1)
+
+    raw_data['cooldown_seconds'] = raw_data[description_col].apply(lambda x: extract_first_number(x, 'cooldown'))
+    raw_data['duration_seconds'] = raw_data[description_col].apply(lambda x: extract_first_number(x, 'duration'))
+
+    print("\nProcessing Perks Table...")
+    perks_df = process_perks_table(raw_data)
+
+    if perks_df is None:
+        print("\nStopping execution: Cannot proceed due to missing columns.")
+        return
+
+    print(perks_df[['PerkID', 'PerkName', 'Role']].head())
+
+    print("\nProcessing Tags & PerkTags Tables...")
+    tags_df, perktags_df = process_tags_tables(raw_data, perks_df)
+    print(f"Created {len(tags_df)} unique tags.")
+
+    print("\nProcessing Perk Metrics Table...")
+    metrics_df = process_metrics_table(raw_data, perks_df)
+    print(metrics_df.head())
+
+    print("\n--- Exporting Files ---")
+    perks_df.to_csv('/content/sql_perks.csv', index=False)
+    tags_df.to_csv('/content/sql_tags.csv', index=False)
+    perktags_df.to_csv('/content/sql_perktags.csv', index=False)
+    metrics_df.to_csv('/content/sql_metrics.csv', index=False)
+    print("Success! All 4 database tables have been saved to Colab.")
+
+if __name__ == "__main__":
+    main()
