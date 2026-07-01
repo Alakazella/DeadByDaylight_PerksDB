@@ -1,0 +1,143 @@
+import pandas as pd
+import numpy as np
+
+def load_raw_data():
+    """
+    Loads data from the exported 'Beta Dead by Daylight PerkDex' CSV file.
+    """
+    try:
+        csv_path = '/content/Beta Dead by Daylight PerkDex - updated_perks_data.csv'
+        print(f"Attempting to load '{csv_path}'...")
+        return pd.read_csv(csv_path)
+    except FileNotFoundError:
+        print(f"Error: Could not find '{csv_path}'.")
+        print("Please make sure you have uploaded the CSV file to your Google Colab session.")
+        return None
+
+def process_perks_table(raw_df):
+    """Extracts and formats the main Perks table."""
+    required_columns = ['perk', 'role', 'character', 'effects', 'activation_triggers']
+    
+    missing_cols = [col for col in required_columns if col not in raw_df.columns]
+    
+    if missing_cols:
+        print(f"\n--- COLUMN ERROR ---")
+        print(f"Missing columns: {missing_cols}")
+        print(f"Columns actually found in your CSV:")
+        for col in raw_df.columns:
+            print(f"  - '{col}'")
+        print("\nPlease update the script's column names to match the ones found in your CSV, or rename the headers in your Google Sheet.")
+        return None
+
+    perks_df = raw_df[required_columns].copy()
+    
+    # Rename columns to match SQL schema
+    perks_df.columns = ['PerkName', 'Role', 'CharacterName', 'Description', 'ActivationCondition']
+    
+    # Add a mock PerkID (in SQL this is AUTO_INCREMENT, but we need it here to link tables)
+    perks_df['PerkID'] = range(1, len(perks_df) + 1)
+    
+    return perks_df
+
+def process_tags_tables(raw_df, perks_df):
+    """Creates the unique Tags table and the PerkTags junction table."""
+    all_tags = set()
+    perk_tag_relationships = []
+    
+    for index, row in raw_df.iterrows():
+        # Find the corresponding PerkID
+        perk_id = perks_df.loc[perks_df['PerkName'] == row['perk'], 'PerkID'].iloc[0]
+        
+        # Split the comma-separated tags and clean up whitespace (handling NaNs safely)
+        tag_str = str(row['tags']) if pd.notna(row['tags']) else ""
+        tags = [tag.strip() for tag in tag_str.split(',') if tag.strip()]
+        
+        for tag in tags:
+            all_tags.add(tag)
+            perk_tag_relationships.append({'PerkID': perk_id, 'TagName': tag})
+            
+    # Create unique Tags DataFrame
+    tags_df = pd.DataFrame({'TagName': list(all_tags)})
+    tags_df['TagID'] = range(1, len(tags_df) + 1)
+    
+    # Create Junction DataFrame (PerkTags)
+    perktags_df = pd.DataFrame(perk_tag_relationships)
+    # Merge to get the TagID instead of the TagName string
+    perktags_df = perktags_df.merge(tags_df, on='TagName')[['PerkID', 'TagID']]
+    
+    return tags_df, perktags_df
+
+def process_metrics_table(raw_df, perks_df):
+    """Extracts tier values and units into the PerkMetrics relational format."""
+    metrics_data = []
+    
+    for index, row in raw_df.iterrows():
+        perk_id = perks_df.loc[perks_df['PerkName'] == row['perk'], 'PerkID'].iloc[0]
+        
+        # 1. Handle generic tiered values
+        if 'Value_T1' in raw_df.columns and pd.notna(row['Value_T1']):
+            metrics_data.append({
+                'PerkID': perk_id,
+                'MetricContext': 'Primary Effect',
+                'MetricUnit': 'Variable', # Raw CSV doesn't specify explicit unit in this column
+                'Tier1Value': row['Value_T1'],
+                'Tier2Value': row['Value_T2'],
+                'Tier3Value': row['Value_T3']
+            })
+            
+        # 2. Handle cooldowns (if they exist)
+        if 'Cooldown tier 1' in raw_df.columns and pd.notna(row['Cooldown tier 1']):
+            metrics_data.append({
+                'PerkID': perk_id,
+                'MetricContext': 'Cooldown',
+                'MetricUnit': 'Seconds',
+                'Tier1Value': row['Cooldown tier 1'],
+                'Tier2Value': row['Cooldown tier 2'],
+                'Tier3Value': row['Cooldown tier 3']
+            })
+            
+    metrics_df = pd.DataFrame(metrics_data)
+    
+    # Fallback if no metrics were found
+    if len(metrics_df) == 0:
+        metrics_df = pd.DataFrame(columns=['PerkID', 'MetricContext', 'MetricUnit', 'Tier1Value', 'Tier2Value', 'Tier3Value'])
+        
+    metrics_df['MetricID'] = range(1, len(metrics_df) + 1)
+    
+    # Reorder columns to match SQL schema
+    return metrics_df[['MetricID', 'PerkID', 'MetricContext', 'MetricUnit', 'Tier1Value', 'Tier2Value', 'Tier3Value']]
+
+def main():
+    print("Loading raw data from 'Beta Dead by Daylight PerkDex'...")
+    raw_data = load_raw_data()
+    
+    if raw_data is None:
+        print("\nStopping execution: No data file was loaded.")
+        return
+        
+    print("\nProcessing Perks Table...")
+    perks_df = process_perks_table(raw_data)
+    
+    if perks_df is None:
+        print("\nStopping execution: Cannot proceed due to missing columns.")
+        return
+        
+    print(perks_df[['PerkID', 'PerkName', 'Role']].head())
+    
+    print("\nProcessing Tags & PerkTags Tables...")
+    tags_df, perktags_df = process_tags_tables(raw_data, perks_df)
+    print(f"Created {len(tags_df)} unique tags.")
+    
+    print("\nProcessing Perk Metrics Table...")
+    metrics_df = process_metrics_table(raw_data, perks_df)
+    print(metrics_df.head())
+    
+    print("\n--- Exporting Files ---")
+    perks_df.to_csv('/content/sql_perks.csv', index=False)
+    tags_df.to_csv('/content/sql_tags.csv', index=False)
+    perktags_df.to_csv('/content/sql_perktags.csv', index=False)
+    metrics_df.to_csv('/content/sql_metrics.csv', index=False)
+    print("Success! All 4 database tables have been saved to Colab.")
+
+if __name__ == "__main__":
+    main()
